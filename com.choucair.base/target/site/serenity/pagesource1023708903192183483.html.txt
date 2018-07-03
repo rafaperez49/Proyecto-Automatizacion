@@ -1,0 +1,740 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<title>Sucursal_Virtual_Empresas_63172378C460FEEC2BC0A8A8E241494E</title>
+<script language="JavaScript" src="/js/help.js"></script>
+<script language="JavaScript1.2" src="/js/validar.js"></script>
+<script language="JavaScript1.2" src="/js/F5OFF.js"></script>
+<script language="JavaScript1.2" src="/js/virtual_keyboard.js?v=1.0.0"></script>
+<script language="javascript" src="/js/hashtable.js">  </script>
+<script language="javascript" src="/js/fp_AA.js">  </script>
+<link rel="stylesheet" type="text/css" href="/jquery_1.12/css/jquery-ui.css" />
+<script src="/jquery_1.12/js/jquery.js"></script>
+<script src="/jquery_1.12/js/jquery-ui.js"></script>
+<script type="text/javascript" src="/js/rsa.js"></script>
+<script type="text/javascript" src="/js/jsbn2.js"></script>
+<script type="text/javascript" src="/js/prng4.js"></script>
+<script type="text/javascript" src="/js/rng.js"></script>
+<script type="text/javascript" src="/js/base64.js"></script>
+
+<script language="JavaScript">
+var jQuery_1_12 = $.noConflict(true);
+
+function getActivityId(){
+var id = "63172378C460FEEC2BC0A8A8E241494E";
+document.title = "Sucursal_Virtual_Empresas_"+id;
+}
+
+  var deletePassword = 0;
+  var showMessage = 0;
+
+function blockEnter(evt) {
+	showMessage = 1;
+	evt = (evt) ? evt : event;
+    var charCode = (evt.charCode) ? evt.charCode :((evt.which) ? evt.which : evt.keyCode);
+    if (charCode == 13) {
+    	deletePassword = 0;// on enter key(13) wont delete typed
+    } else {
+    	deletePassword = 1;
+    }
+    return false;// false to avoid to type any character or avoid ENTER key action, also will avoid onkeypress event to be trigger
+}
+</script>
+<script language="JavaScript" type="text/javascript">
+
+function getFlashMovieObject(movieName){
+   // alert( "getFlashMovieObject: " + movieName );
+   if ( window.document[movieName] ) {
+       return window.document[movieName];
+   }
+   if ( navigator.appName.indexOf("Microsoft Internet") == -1 ){
+     if ( document.embeds &amp;&amp; document.embeds[movieName] )
+       return document.embeds[movieName];
+   }
+   else // if ( navigator.appName.indexOf("Microsoft Internet") != -1 )
+   {
+     return document.getElementById( movieName );
+   }
+}
+
+</script>
+
+<script language="JavaScript">
+	var vectorShow='8O0L2ZcÍFú6SK5ü4ÉwIUhWsj7ÜXdízkPTqYóéÓxáu_lAn/JvÑmrgñÚRBGp9QC-1H3VNÁaMeDbyEotfi';
+	var vectorEquiv='y8ZaFxTkv31ÁIÉgÍmÓnüN-YéVLPUM0s_t7dóciuBRXH/híÜrCjKlD2QñÑ9áEJepOqbfowúÚG6zA4W5S';
+	var vectorNumberShow='8310729645';
+	//Initialize the Virtual Keyboard
+	initVirtualKeyboard(vectorShow, vectorEquiv, vectorNumberShow);
+
+	if(window.history.forward(1) != null) {
+	   window.history.forward(1);
+	}
+
+	function Ventana(link,name,option){
+			name=window.open(link,name,option);
+			name.focus();
+	}
+
+	&lt;!--
+		var bPrefix = "M&amp;aacute;ximo caracteres : ";
+		var mPrefix = "Ingrese un valor para el campo ";		// Prefijo que aparece en el Warning, cuando el campo esta vac&amp;iacute;o
+		var Prefix = "M&amp;aacute;ximo caracteres : ";				// Prefijo en el Warning cuando el campo tiene mas caracteres de los posibles
+		var bSuffix = ".\nIngrese nuevamente el dato.";			// Sufijo en el Warning cuando se tiene mas caracteres que los posibles
+		var SelectSuffix = "Se debe seleccionar ";
+		var sNoValid = "Caracter inv\u00E1lido en ";
+
+  function formValidation() {
+    var forma = document.forma;
+
+	/*Se asigna el idioma en el campo userlanguage, este valor es
+	  usado por el proceso de identificacion de dispositivos*/
+    forma.userlanguage.value = getUserLanguage();
+	if(forma.COMPANYID.value == '')
+	{
+		alert("Ingrese un valor para el campo NIT de la empresa");
+		forma.COMPANYID.focus();
+		return false;
+	}
+
+	if (document.getElementById(forma.COMPANYID.id).value.substring(0, 1) != "*")
+	{
+		companyid = document.getElementById(forma.COMPANYID.id).value;
+	}
+
+	for(var i=0; i &lt; companyid.length ; i++){
+		var1 = companyid.substring(i,i+1);
+		var2 = "0123456789";
+		if(var2.indexOf(var1) == -1){
+			alert("Caracter inválido en NIT de la empresa");
+			forma.COMPANYID.focus();
+			return false;
+		}
+
+	}
+	if(forma.CLIENTID.value == '')
+	{
+		alert("Ingrese un valor para el campo Usuario");
+		forma.CLIENTID.focus();
+		return false;
+	}
+	if(forma.USERPASS.value == '')
+	{
+		alert("Ingrese un valor para el campo Clave");
+		forma.USERPASS.focus();
+		return false;
+	}
+    forma.BOLEURL.value = window.location.protocol+ "//" + window.location.host;
+
+    /*if (checkNumericoHidden(forma.TCOMPID_VK,'NIT de la empresa', false, 15) &amp;&amp;
+		checkAlfaNumericoHidden(forma.TCLIID_VK,'Usuario', false, 15) &amp;&amp;
+        checkAlfaNumericoHidden(forma.USERPASS,'Clave', false, 8)){
+			return true;
+		}*/
+	document.getElementById("USERPASS").focus();
+	/*Se aumento logica para ponerle un cookie flash al navegador del usuario*/
+	post_fingerprints(document.forma);
+	submitValue(forma.TCOMPID_VK, forma.TCLIID_VK, forma.TKEY_VK, forma.USERPASS );
+	deshabilitarBotones("forma");
+	
+	forma.TCOMPID_VK.value = verifModulus( forma.TCOMPID_VK.value );
+	forma.TCLIID_VK.value = verifModulus( forma.TCLIID_VK.value );
+	forma.TKEY_VK.value = verifModulus( forma.TKEY_VK.value );
+	
+	return true;
+  }
+
+  var teclaReal = 0;
+
+function pulsarTecla() {
+			var teclaIE = event.keyCode;
+			var teclaReal = String.fromCharCode(teclaIE);
+			alert("Número:  "+ teclaIE + "\nReal:  " + teclaReal);
+
+		}
+
+		function clickIE4(){
+		if (event.button==2){
+		alert('BOTON 1');
+		return false;
+		}
+}
+  function validarNoUsarTecladoReal_OnKeyPress(_object)
+  {//using on key up event
+	  if (showMessage){
+		  alert("Por favor utilice el teclado virtual para digitar su clave");
+		  showMessage=0;
+	  }
+	  if (deletePassword){
+		  _object.value="";
+	  }
+	  return false;
+  }
+  function validarNoUsarTecladoReal_OnFocus(_object)
+  {
+   	setFocusedElement(_object);
+  }
+  function verifModulus( pass ) {
+		var modulus = '897f4c48268fd2c4545a851cfcdec82b23c744966af4c2473c02f62eeaf98285c6da5585244344addfa75cb44d8b19e423c5d9156905a1a53f49ec1b55df843a8850fb2d125d182f50e37d5adebce84784e23c03fdf21303f48b9cda204dd0a77723dd3ed0ad19643371037a1ec6ff3be9879540fd178a182c0a5234c64b3cada10ec0805e543da69bafe91f8aee8cede4da37c18e6bb3446716c566a4f218742af3752c45a2fade2e94e903cb5f6a92a92c96d2a6420350c97848247b461212211578bbf360c2b896be7b0ce1540a376e68b875924e86adc781eef15b63d08426a68aa469ac572a31103a6e5b2daa9d76347f31c6348db53997b37abd06b975';
+		var sal = '8620118290761815150';
+		var rsa = new RSAKey();
+		rsa.setPublic(modulus, "10001")
+		var res = rsa.encrypt(pass + "|" + sal);
+		return hex2b64(res);
+		
+   }
+	--&gt;
+</script>
+<meta http-equiv="Content-Type" content="text/html;" />
+
+
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="-1" />
+
+
+<script language="JavaScript">
+&lt;!-- hide
+function MM_goToURL(ie,d) { //v3.0
+  //var i ,args=MM_goToURL.arguments; document.MM_returnValue = false;
+  //for (i=0; i&lt;(args.length-1); i+=2) eval(args[i]+".location='"+args[i+1]+"'");
+  eval(location = d);
+}
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i&lt;(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))&gt;0&amp;&amp;parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&amp;&amp;d.all) x=d.all[n]; for (i=0;!x&amp;&amp;i&lt;d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&amp;&amp;d.layers&amp;&amp;i&lt;d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x &amp;&amp; document.getElementById) x=document.getElementById(n); return x;
+}
+// stop hiding --&gt;
+</script>
+<link rel="stylesheet" href="/bancolombia/styles.css?version=1.0.1" type="text/css" />
+<style type="text/css">
+
+.linkExterno {
+
+    color: #0000FF; !important
+    font-weight: 400;
+    text-decoration: underline;	
+}
+
+</style>
+<script type="text/javascript">
+if (top != self) top.location.href = location.href;
+</script></head>
+<!-- D20259 se elimina funcion incializo()-->
+
+
+
+
+<body bgcolor="#ffffff" topmargin="0" leftmargin="0" marginheight="0" marginwidth="0" onload="if(document.forma.COMPANYID.value == '') document.forma.COMPANYID.focus(); getActivityId(); rng_seed_time();" ondragstart="return false" onkeypress="rng_seed_time();" onclick="rng_seed_time();">
+
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tbody><tr>
+		<td valign="top" align="left">
+			<table border="0" cellpadding="0" cellspacing="0" width="100%">
+				<tbody><tr>
+					<td width="50%">
+					<img name="logo_sve" src="/bancolombia/images/logo_sve.gif" width="150" height="49" border="0" id="logo_sve" alt="" align="left" /></td>
+					<td width="50%">
+					<img name="titulo_sve" src="/bancolombia/images/titulo_sve.gif" width="398" height="49" border="0" id="titulo_sve" alt="" align="right" /></td>
+				</tr>
+			</tbody></table>
+		</td>
+	</tr>
+</tbody></table>
+<b>
+	   </b><table width="98%" border="0" cellspacing="0" cellpadding="0">
+	<tbody><tr valign="top">
+	  <td width="1%" height="20"> </td>
+	  <td width="99%" height="20">
+		
+		 <link rel="stylesheet" href="/bancolombia/styles.css" type="text/css" />
+<link rel="stylesheet" href="/bancolombia/tipos.css" type="text/css" />
+
+	
+<script src="/js/jquery-min.js" type="text/javascript"></script>
+<script src="/js/jquery.validate_t1-min.js" type="text/javascript"></script>
+<script src="/js/jquery.jclock-min.js" type="text/javascript"></script>
+<script src="/js/pt.bubble-min.js" type="text/javascript"></script>
+<script src="/js/pt.loadImages-min.js" type="text/javascript"></script>
+<script src="/js/jquery.metadata-min.js" type="text/javascript"></script>
+<script src="/js/jquery.bgiframe-min.js" type="text/javascript"></script>
+<script src="/js/genericScripts.js" type="text/javascript"></script>
+
+<script language="JavaScript1.2" src="/js/printPage.js"></script>
+<script language="JavaScript1.2" src="/js/validar.js"></script>
+<script language="JavaScript1.2" src="/js/F5OFF.js"></script>
+
+<script>
+	function deshabilitarBotones(value){
+  		elementosFormu = $('#'+value+' input:button, :submit');
+  		elementosFormu.each(function () {
+        $(this).attr("disabled",true);
+  		});
+		}
+
+	function habilitarBotones(value){
+  		elementosFormu = $('#'+value+' input:button, :submit');
+  		elementosFormu.each(function () {
+        $(this).attr("disabled",false);
+  		});
+		}
+
+	function disableLink(value){
+			var element = document.getElementById(value);
+			if (typeof element === 'undefined' || element === null) {
+			
+			}else{
+			element.setAttribute('className', "disabled_link"); 
+			element.setAttribute('class', "disabled_link");
+			}
+	}
+
+		function setearTamanioInput(value, name1){
+			var currentWidest = 0;
+				selectFormu = $('#'+value+' select');  
+				selectFormu.each(function () {
+					var name = this.name;
+					if($(this).width() &gt; currentWidest) { currentWidest = $(this).width(); }
+				});
+				currentWidest = currentWidest + 5;
+				selectFormu.each(function () {
+						$(this).css({'width': currentWidest});
+				});
+				inputFormu = $('#'+value+' input:not(:button, :submit)');  
+								inputFormu = $('#'+value+' input:not(:button, :submit, :hidden)');  
+				inputFormu.each(function () {
+					var title = this.title;
+					if (title != "false")
+						$(this).css({'width': currentWidest});
+				});
+				textAreaFormu = $('#'+value+' textarea');  
+				textAreaFormu.each(function () {
+					var modificar = this.modificar;
+					if (modificar != "false")
+						$(this).css({'width': currentWidest});
+				});
+			}	
+	
+	  	function pintarSelect(value,element,param){ 
+		var TD_Id = param[0];
+		if(value=="") {
+			if ( $.browser.msie ){
+				document.getElementById(TD_Id).style.border="1px solid #ff0000";
+				}
+			return false;
+			}
+		if ( $.browser.msie ){
+				document.getElementById(TD_Id).style.border="0px solid #000000";
+				}
+		return true;	
+	}
+
+</script>
+
+
+
+<style type="text/css">
+.espacioSimple{	height:13px;}
+/*para el td que contiene  la etiqueta ShowRecoverableError. Son 26- 4 px de cada borde de los td*/
+.espacioDoble{  height:26px;}
+/*para el td que contiene  la etiqueta ShowInfo. son 39px del espacio triple mas 8 del renglon para el texto de la descripcion. En total son 47px*/
+.espacioTriple{	height:39px; vertical-align:bottom;}
+.subTitulo{font-size: 10pt; font-weight: bold;}
+a.disabled_link{ pointer-events:none;}
+</style> 
+	  </td>
+	</tr>
+	<tr>
+	   <td width="1%" height="21"> </td>
+	   <td width="99%" height="21"> </td>
+	</tr>
+	<tr>
+		<td width="1%" height="21"> </td>
+		<td width="99%" height="21">
+
+		   
+			  <table cellspacing="0" cellpadding="0" background="/bancolombia/images/fondo_title.gif" border="0">
+				<tbody>
+					<tr>
+					  <td valign="top" align="right" width="4" height="20"><img height="20" src="/bancolombia/images/bullet_title_left.gif" width="4" /></td>
+					  <td class="tituloppal" valign="center" align="left"> Inicio - Sucursal Virtual Empresas</td>
+					 </tr>
+
+				</tbody>
+			  </table>
+		</td>
+	</tr>
+	<tr>
+	  <!--div align="right"--><td valign="top" width="1%">
+		  <div align="right">
+			<b>
+			  <script language="javascript" src="/js/liveclock.js">
+			  &lt;script language="javascript"&gt;
+				&lt;!--
+				
+				new LiveClock('','1','','','','','300','','','','4','null');
+				//--&gt;
+			  </script>
+			</b>
+		  </div>
+		</td>
+	  </tr>
+</tbody></table><b>
+
+<table width="100%" border="0" align="left">
+	<tbody><tr>
+		<td>
+			<table width="975" border="0" cellspacing="0" cellpadding="0">
+			  <tbody><tr>
+
+				  <td width="50%" valign="top" align="left">
+					  <br />
+					  
+					  
+						<form autocomplete="off" name="forma" id="forma" onsubmit="return formValidation();" action="AuthenticationTxBancolombia.login" method="POST">
+
+<!-- onsubmit=" if(formValidation()) submitValue(TCOMPID_VK, TCLIID_VK, TKEY_VK, USERPASS);" -->
+						<input type="hidden" name="processInstanceId" value="63172378C356C5B40EC0A8A8E250494E" />
+<input type="hidden" name="activityInstanceId" value="63172378C460FEEC2BC0A8A8E241494E" />
+
+						<input type="hidden" name="USERTYPE" value="BUSINESS" />
+						<input type="hidden" name="WFMODELNAME" value="BOLE" />
+						<input type="hidden" name="TCOMPID_VK" value="" />
+						<input type="hidden" name="TCLIID_VK" value="" />
+						<input type="hidden" name="TKEY_VK" value="" />
+						<input type="hidden" name="BOLEURL" value="" />
+						
+						<input type="hidden" name="OS_TYPE" value="WINDOWS" />
+
+						<table cellspacing="3" cellpadding="3" border="0" align="center" width="430">
+						   <tbody>
+						    <tr>
+							
+							  <td align="left" valign="middle" colspan="1">
+								<div style="position:relative;left:60px;">
+	 							  Por favor digite el NIT de la empresa:<br />
+								   <input name="COMPANYID" id="COMPANYID" size="20" maxlength="15" onfocus="setFocusedElement(this); setStyle(COMPANYID.id, CLIENTID.id, USERPASS.id);" onselect="selected_company()" onkeydown="ValNum(event)" onclick="ValNum(event)" style="background: white;" />
+								</div>
+							  </td>
+							
+							
+							</tr>
+							<tr>
+							  <td align="left" valign="middle" colspan="2">
+							  	<div style="position:relative;left:60px;">
+								  Por favor digite la identificación del Usuario:<br />
+								  <input name="CLIENTID" id="CLIENTID" size="20" maxlength="15" onfocus="setFocusedElement(this); setStyle(CLIENTID.id, COMPANYID.id, USERPASS.id);" onselect="selected_client()" onkeydown="ValNum(event)" onclick="ValNum(event)" style="background: rgb(255, 255, 160);" />
+								</div>
+							  </td>
+							</tr>
+							<tr>
+							  <td align="left">
+								<div style="position:relative;left:60px;height:16px;">
+									Por favor digite su Clave:
+								</div>
+								<div style="position:relative;left:60px;">
+									<input name="USERPASS" id="USERPASS" size="10" maxlength="8" type="password" onfocus="validarNoUsarTecladoReal_OnFocus(this); setStyle(USERPASS.id, COMPANYID.id, CLIENTID.id);" onselect="selected_pass()" onkeyup="validarNoUsarTecladoReal_OnKeyPress(this);backspaceAndLeftRightPresionadas();" onkeydown="return blockEnter(event)" oncontextmenu="return false" onselectstart="return false" style="background: white;" />
+									<input type="submit" name="Submit" value="Aceptar" class="botones" />
+								</div>
+							  </td>
+							 <td width="1%" height="44"> </td>
+							</tr>
+							<tr>
+								<td colspan="3">
+								  <table border="0" width="100%" cellspacing="0" cellpadding="0">
+									<tbody><tr>
+									  <td rowspan="3" width="60"> </td>
+									  <td height="30">
+									  	<div style="position:relative;">
+												<!-- R3424 -->
+												
+													<a href="#" class="linkExterno" onclick="window.open('/bcbancos/control/BoleExternal.bancolombia?processname=RemindMyPassword','SucursalVirtualEmpresas','width=850,height=600,scrollbars=yes,resizable=yes')">¿Olvidó su clave?</a>   
+												
+												
+											<a href="#" class="linkExterno" onclick="window.open('https://www.todo1.com/cs/Satellite?c=Page&amp;cid=1259763466925&amp;pagename=Ayudas%2FPage%2FAyudasBasicasBancolombia','SucursalVirtualEmpresas','width=565,height=540,scrollbars=yes,resizable=yes')">¿No puede conectarse?</a>   										
+										</div>
+									  </td>
+									</tr>
+								  </tbody></table>
+								</td>
+							</tr>
+							  <tr>
+								<td align="left" valign="top" width="100%" height="165">
+									<!-- BEGIN VIRTUAL KEYBOARD -->
+								  <script>document.writeln(getVirtualKeyboard())</script>  <table border="0" cellspacing="0" cellpadding="0">  <tbody><tr>  <td width="405" heigth="10" valign="top"><table border="0" cellspacing="0" cellpadding="0">  <tbody><tr>    <td height="2"></td>    <td></td>  </tr>  <tr>    <td width="21"></td>    <td>      <table border="0" align="left" valign="top" cellspacing="0" cellpadding="1">        <tbody><tr align="left">  				 <td width="250" valign="top" align="left" style="padding-top: 6px;"><img id="alphaKeyboard" name="alphaKeyboard" src="/bancolombia/images/virtualkeyboard/T_cont2.gif" usemap="#alphaKeyboard" width="245" height="103" alt="" border="0" /></td>  				 <td width="63" valign="top" align="left"> <table border="0" cellspacing="5" cellpadding="0" class="bg_button" id="_KEYBRD" valign="top">  <tbody><tr><td width="23" height="22" class="bg_buttonSmall" background="/bancolombia/images/virtualkeyboard/small_button.gif" align="center" style="cursor:default; padding-left: 8px; padding-right: 7px; font-size: 12; font-weight: bold; color: #616161;" onmouseover="changeToStarKeyboard();" onmouseout="changeToOrigKeyboard();" onclick="writeNumeric(8);"><div border="0" id="mykey8" valign="center" align="center" onfocus="this.blur();" class="colorContrast2" ;="">8</div></td><td width="23" height="22" class="bg_buttonSmall" background="/bancolombia/images/virtualkeyboard/small_button.gif" align="center" style="cursor:default; padding-left: 8px; padding-right: 7px; font-size: 12; font-weight: bold; color: #616161;" onmouseover="changeToStarKeyboard();" onmouseout="changeToOrigKeyboard();" onclick="writeNumeric(3);"><div border="0" id="mykey3" valign="center" align="center" onfocus="this.blur();" class="colorContrast2" ;="">3</div></td><td width="23" height="22" class="bg_buttonSmall" background="/bancolombia/images/virtualkeyboard/small_button.gif" align="center" style="cursor:default; padding-left: 8px; padding-right: 7px; font-size: 12; font-weight: bold; color: #616161;" onmouseover="changeToStarKeyboard();" onmouseout="changeToOrigKeyboard();" onclick="writeNumeric(1);"><div border="0" id="mykey1" valign="center" align="center" onfocus="this.blur();" class="colorContrast2" ;="">1</div></td></tr>  <tr><td width="23" height="22" class="bg_buttonSmall" background="/bancolombia/images/virtualkeyboard/small_button.gif" align="center" style="cursor:default; padding-left: 8px; padding-right: 7px; font-size: 12; font-weight: bold; color: #616161;" onmouseover="changeToStarKeyboard();" onmouseout="changeToOrigKeyboard();" onclick="writeNumeric(0);"><div border="0" id="mykey0" valign="center" align="center" onfocus="this.blur();" class="colorContrast2" ;="">0</div></td><td width="23" height="22" class="bg_buttonSmall" background="/bancolombia/images/virtualkeyboard/small_button.gif" align="center" style="cursor:default; padding-left: 8px; padding-right: 7px; font-size: 12; font-weight: bold; color: #616161;" onmouseover="changeToStarKeyboard();" onmouseout="changeToOrigKeyboard();" onclick="writeNumeric(7);"><div border="0" id="mykey7" valign="center" align="center" onfocus="this.blur();" class="colorContrast2" ;="">7</div></td><td width="23" height="22" class="bg_buttonSmall" background="/bancolombia/images/virtualkeyboard/small_button.gif" align="center" style="cursor:default; padding-left: 8px; padding-right: 7px; font-size: 12; font-weight: bold; color: #616161;" onmouseover="changeToStarKeyboard();" onmouseout="changeToOrigKeyboard();" onclick="writeNumeric(2);"><div border="0" id="mykey2" valign="center" align="center" onfocus="this.blur();" class="colorContrast2" ;="">2</div></td></tr>  <tr><td width="23" height="22" class="bg_buttonSmall" background="/bancolombia/images/virtualkeyboard/small_button.gif" align="center" style="cursor:default; padding-left: 8px; padding-right: 7px; font-size: 12; font-weight: bold; color: #616161;" onmouseover="changeToStarKeyboard();" onmouseout="changeToOrigKeyboard();" onclick="writeNumeric(9);"><div border="0" id="mykey9" valign="center" align="center" onfocus="this.blur();" class="colorContrast2" ;="">9</div></td><td width="23" height="22" class="bg_buttonSmall" background="/bancolombia/images/virtualkeyboard/small_button.gif" align="center" style="cursor:default; padding-left: 8px; padding-right: 7px; font-size: 12; font-weight: bold; color: #616161;" onmouseover="changeToStarKeyboard();" onmouseout="changeToOrigKeyboard();" onclick="writeNumeric(6);"><div border="0" id="mykey6" valign="center" align="center" onfocus="this.blur();" class="colorContrast2" ;="">6</div></td><td width="23" height="22" class="bg_buttonSmall" background="/bancolombia/images/virtualkeyboard/small_button.gif" align="center" style="cursor:default; padding-left: 8px; padding-right: 7px; font-size: 12; font-weight: bold; color: #616161;" onmouseover="changeToStarKeyboard();" onmouseout="changeToOrigKeyboard();" onclick="writeNumeric(4);"><div border="0" id="mykey4" valign="center" align="center" onfocus="this.blur();" class="colorContrast2" ;="">4</div></td></tr>  <tr><td width="23" height="22" class="bg_buttonSmall" background="/bancolombia/images/virtualkeyboard/small_button.gif" align="center" style="cursor:default; padding-left: 8px; padding-right: 7px; font-size: 12; font-weight: bold; color: #616161;" onmouseover="changeToStarKeyboard();" onmouseout="changeToOrigKeyboard();" onclick="writeNumeric(5);"><div border="0" id="mykey5" valign="center" align="center" onfocus="this.blur();" class="colorContrast2" ;="">5</div></td><td colspan="2" onclick="clearKeys();" class="brr_button"><img src="/bancolombia/images/virtualkeyboard/limpiar.gif" /></td></tr></tbody></table><table class="bg_button" id="_CONSTRAST" valign="top" cellspacing="0">  <tbody><tr><td><img width="90" height="34" border="0" src="/bancolombia/images/virtualkeyboard/Contraste2.gif" name="constrastImg" id="constrastImg" usemap="#numericKeyboardMap" /> <map name="numericKeyboardMap" id="numericKeyboardMap"><area shape="circle" class="cursorContrast" coords="16,21,11" onmouseover="setHandCursor(document.constrastImg)" onclick="changeContrastLevel(1)" onmouseout="setDefaultCursor(document.constrastImg)" /><area shape="circle" coords="45,21,11" onmouseover="setHandCursor(document.constrastImg)" onclick="changeContrastLevel(2)" onmouseout="setDefaultCursor(document.constrastImg)" /><area shape="circle" coords="74,21,11" onmouseover="setHandCursor(document.constrastImg)" onclick="changeContrastLevel(3)" onmouseout="setDefaultCursor(document.constrastImg)" /></map> </td></tr></tbody></table></td>        </tr>      </tbody></table>    </td>  </tr></tbody></table>    </td>  </tr>  <tr>    <td></td>    <td></td>    <td height="18" width="44"></td>  </tr></tbody></table>
+
+    
+<map id="alphaKeyboard" name="alphaKeyboard">
+	<!-- FIRST ROW KEYS -->
+	<area shape="rectangle" coords="  0,  0, 20, 22" onclick="writeAlpha('Q')" onmouseover="setHandCursor(document.alphaKeyboard)" onmouseout="setDefaultCursor(document.alphaKeyboard)" />
+	<area shape="rectangle" coords=" 20,  0, 41, 22" onclick="writeAlpha('W')" onmouseover="setHandCursor(document.alphaKeyboard)" onmouseout="setDefaultCursor(document.alphaKeyboard)" />
+	<area shape="rectangle" coords=" 41,  0, 62, 22" onclick="writeAlpha('E')" onmouseover="setHandCursor(document.alphaKeyboard)" onmouseout="setDefaultCursor(document.alphaKeyboard)" />
+	<area shape="rectangle" coords=" 62,  0, 83, 22" onclick="writeAlpha('R')" onmouseover="setHandCursor(document.alphaKeyboard)" onmouseout="setDefaultCursor(document.alphaKeyboard)" />
+	<area shape="rectangle" coords=" 83,  0,104, 22" onclick="writeAlpha('T')" onmouseover="setHandCursor(document.alphaKeyboard)" onmouseout="setDefaultCursor(document.alphaKeyboard)" />
+	<area shape="rectangle" coords="104,  0,125, 22" onclick="writeAlpha('Y')" onmouseover="setHandCursor(document.alphaKeyboard)" onmouseout="setDefaultCursor(document.alphaKeyboard)" />
+	<area shape="rectangle" coords="125,  0,146, 22" onclick="writeAlpha('U')" onmouseover="setHandCursor(document.alphaKeyboard)" onmouseout="setDefaultCursor(document.alphaKeyboard)" />
+	<area shape="rectangle" coords="146,  0,167, 22" onclick="writeAlpha('I')" onmouseover="setHandCursor(document.alphaKeyboard)" onmouseout="setDefaultCursor(document.alphaKeyboard)" />
+	<area shape="rectangle" coords="167,  0,188, 22" onclick="writeAlpha('O')" onmouseover="setHandCursor(document.alphaKeyboard)" onmouseout="setDefaultCursor(document.alphaKeyboard)" />
+	<area shape="rectangle" coords="188,  0,209, 22" onclick="writeAlpha('P')" onmouseover="setHandCursor(document.alphaKeyboard)" onmouseout="setDefaultCursor(document.alphaKeyboard)" />
+	<!-- BACKSPACE KEY -->
+	<area shape="rectangle" coords="209,  0,244, 22" onclick="tilde=false;deleteChar()" onmouseover="setHandCursor(document.alphaKeyboard)" onmouseout="setDefaultCursor(document.alphaKeyboard, 'default')" />
+	<!-- SECOND ROW KEYS -->
+	<area shape="rectangle" coords=" 10, 22, 30, 44" onclick="writeAlpha('A')" onmouseover="setHandCursor(document.alphaKeyboard)" onmouseout="setDefaultCursor(document.alphaKeyboard)" />
+	<area shape="rectangle" coords=" 30, 22, 51, 44" onclick="writeAlpha('S')" onmouseover="setHandCursor(document.alphaKeyboard)" onmouseout="setDefaultCursor(document.alphaKeyboard)" />
+	<area shape="rectangle" coords=" 51, 22, 72, 44" onclick="writeAlpha('D')" onmouseover="setHandCursor(document.alphaKeyboard)" onmouseout="setDefaultCursor(document.alphaKeyboard)" />
+	<area shape="rectangle" coords=" 72, 22, 93, 44" onclick="writeAlpha('F')" onmouseover="setHandCursor(document.alphaKeyboard)" onmouseout="setDefaultCursor(document.alphaKeyboard)" />
+	<area shape="rectangle" coords=" 93, 22,114, 44" onclick="writeAlpha('G')" onmouseover="setHandCursor(document.alphaKeyboard)" onmouseout="setDefaultCursor(document.alphaKeyboard)" />
+	<area shape="rectangle" coords="114, 22,135, 44" onclick="writeAlpha('H')" onmouseover="setHandCursor(document.alphaKeyboard)" onmouseout="setDefaultCursor(document.alphaKeyboard)" />
+	<area shape="rectangle" coords="135, 22,156, 44" onclick="writeAlpha('J')" onmouseover="setHandCursor(document.alphaKeyboard)" onmouseout="setDefaultCursor(document.alphaKeyboard)" />
+	<area shape="rectangle" coords="156, 22,177, 44" onclick="writeAlpha('K')" onmouseover="setHandCursor(document.alphaKeyboard)" onmouseout="setDefaultCursor(document.alphaKeyboard)" />
+	<area shape="rectangle" coords="177, 22,198, 44" onclick="writeAlpha('L')" onmouseover="setHandCursor(document.alphaKeyboard)" onmouseout="setDefaultCursor(document.alphaKeyboard)" />
+	<area shape="rectangle" coords="198, 22,219, 44" onclick="writeAlpha('Ñ')" onmouseover="setHandCursor(document.alphaKeyboard)" onmouseout="setDefaultCursor(document.alphaKeyboard)" />
+	<!-- THIRD ROW KEYS -->
+	<area shape="rectangle" coords=" 20, 44, 40, 66" onclick="writeAlpha('Z')" onmouseover="setHandCursor(document.alphaKeyboard)" onmouseout="setDefaultCursor(document.alphaKeyboard)" />
+	<area shape="rectangle" coords=" 40, 44, 61, 66" onclick="writeAlpha('X')" onmouseover="setHandCursor(document.alphaKeyboard)" onmouseout="setDefaultCursor(document.alphaKeyboard)" />
+	<area shape="rectangle" coords=" 61, 44, 82, 66" onclick="writeAlpha('C')" onmouseover="setHandCursor(document.alphaKeyboard)" onmouseout="setDefaultCursor(document.alphaKeyboard)" />
+	<area shape="rectangle" coords=" 82, 44,103, 66" onclick="writeAlpha('V')" onmouseover="setHandCursor(document.alphaKeyboard)" onmouseout="setDefaultCursor(document.alphaKeyboard)" />
+	<area shape="rectangle" coords="103, 44,124, 66" onclick="writeAlpha('B')" onmouseover="setHandCursor(document.alphaKeyboard)" onmouseout="setDefaultCursor(document.alphaKeyboard)" />
+	<area shape="rectangle" coords="124, 44,145, 66" onclick="writeAlpha('N')" onmouseover="setHandCursor(document.alphaKeyboard)" onmouseout="setDefaultCursor(document.alphaKeyboard)" />
+	<area shape="rectangle" coords="145, 44,166, 66" onclick="writeAlpha('M')" onmouseover="setHandCursor(document.alphaKeyboard)" onmouseout="setDefaultCursor(document.alphaKeyboard)" />
+	<!-- UPPERCASE KEY -->
+	<area shape="rectangle" coords="166, 44,220, 66" onclick="switchUppercase()" onmouseover="setHandCursor(document.alphaKeyboard)" onmouseout="setDefaultCursor(document.alphaKeyboard)" />
+	<!-- ENTER KEY -->
+	<area shape="rectangle" coords="219, 22,244, 66" onclick="tilde=false;getEnter();refreshAlphaKeyboard(contrastLevel, uppercase, tilde);if (formValidation()) {document.forma.submit();}" onmouseover="setHandCursor(document.alphaKeyboard)" onmouseout="setDefaultCursor(document.alphaKeyboard)" />
+	<!-- CONTRASTS KEYS >
+	<area shape="rectangle" coords="49, 81,86,103" onclick="changeContrastLevel(1, uppercase)" onmouseover="setHandCursor(document.alphaKeyboard)" onmouseout="setDefaultCursor(document.alphaKeyboard)"/>
+	<area shape="rectangle" coords="86, 81,125,103" onclick="changeContrastLevel(2, uppercase)" onmouseover="setHandCursor(document.alphaKeyboard)" onmouseout="setDefaultCursor(document.alphaKeyboard)"/>
+	<area shape="rectangle" coords="125, 81,162,103" onclick="changeContrastLevel(3, uppercase)" onmouseover="setHandCursor(document.alphaKeyboard)" onmouseout="setDefaultCursor(document.alphaKeyboard)"/ -->
+	<!-- TECLA DE BARRA -->
+	<area shape="rectangle" coords="140, 75, 160, 96" onclick="writeAlpha(otherCharacterArray[0])" onmouseover="setHandCursor(document.alphaKeyboard)" onmouseout="setDefaultCursor(document.alphaKeyboard)" />
+	<!-- TECLA DE GUION -->
+	<area shape="rectangle" coords="161, 75, 180, 96" onclick="writeAlpha(otherCharacterArray[1])" onmouseover="setHandCursor(document.alphaKeyboard)" onmouseout="setDefaultCursor(document.alphaKeyboard)" />
+	<!-- TECLA DE ACENTO -->
+	<area shape="rectangle" coords="181, 75, 202, 96" onclick="switchTilde()" onmouseover="setHandCursor(document.alphaKeyboard)" onmouseout="setDefaultCursor(document.alphaKeyboard)" />
+	<!-- TECLA U con DIERESIS -->
+	<area shape="rectangle" coords="203, 75, 222, 96" onclick="writeAlpha('Ü')" onmouseover="setHandCursor(document.alphaKeyboard)" onmouseout="setDefaultCursor(document.alphaKeyboard)" />
+	<!-- TECLA UNDERSCORE -->
+	<area shape="rectangle" coords="223, 75, 244, 96" onclick="writeAlpha('_')" onmouseover="setHandCursor(document.alphaKeyboard)" onmouseout="setDefaultCursor(document.alphaKeyboard)" />	
+</map>
+									<!-- END VIRTUAL KEYBOARD -->
+								</td>
+							  </tr>
+						  </tbody>
+						</table>
+							
+						<table width="98%" cellspacing="0" cellpadding="0" border="0">
+						<tbody><tr valign="top">
+						<td width="2%" height="21"> </td>
+							<td align="center"><!-- DEVBOLEBC-1350 v5.15.4 Ajuste de tamano de las ventanas -->
+								<a href="#" class="linkExterno" onclick="window.open('/bcbancos/control/BoleExternal.bancolombia?processname=ExternalCompanyRegistration','SucursalVirtualEmpresas','width=850,height=600,scrollbars=yes,resizable=yes')"> Afiliar Nueva Empresa</a>   
+							</td>
+							<td align="center">	
+								<a href="#" class="linkExterno" onclick="window.open('/bcbancos/control/BoleExternal.bancolombia?processname=ExternalUserRegistration','SucursalVirtualEmpresas','width=750,height=600,scrollbars=yes,resizable=yes')">Afiliar Nuevo Usuario</a>   
+							</td>
+							<td align="center">
+								<a href="#" class="linkExterno" onclick="window.open('http://www.bancolombia.com/home/micrositios/sucursalVirtualEmpresas/afiliacion/formularios/Form2.aspx')">Formato de Novedades</a>   
+							</td>
+						</tr>
+						</tbody></table>
+						
+						
+				    <input type="hidden" name="device_id" id="device_id" value="" />
+					<input type="hidden" name="userlanguage" id="userlanguage" value="" />
+				    <table width="100%" style="display:none;">
+				    <tbody><tr>
+				    <td width="20%"> </td>
+				    <td width="80%">
+				        <table width="100%">
+				            <tbody><tr><td width="100%"> </td></tr>
+				            <tr><td width="100%"> </td></tr>
+				            <tr>
+				            <td width="100%">
+				                <textarea name="deviceprint" cols="30" rows="3" readonly="" style="scrollbars:yes; background-color:#E7EAEB; opacity: 0; -moz-opacity: 0; filter: alpha(opacity=0);"></textarea>
+				            </td></tr>
+				            <tr><td width="100%"> </td></tr>
+				        </tbody></table>
+				    </td>
+				    <td width="20%"> </td>
+				    </tr>
+				    </tbody></table>
+					</form>
+					</td>
+					<td align="left" valign="top">
+						<table border="0" cellspacing="0" cellpadding="1" bgcolor="#ffffff" width="50%">
+							  <tbody><tr>
+							  	<td colspan="2">
+									<div style="position:relative;top:20px;">
+									<!-- R3424 -->
+									
+										<iframe frameborder="0" scrolling="no" width="490" height="300" src="/bancolombia/contenido/login_BOLE_BC_zonaA.html"></iframe>
+									
+									
+									</div>
+							    </td>
+							   </tr>
+						</tbody></table>
+				  </td>
+	 		   </tr>
+			</tbody></table>
+		</td>
+	 </tr>
+	 <tr>
+	 	<td>
+			<table border="0" cellspacing="0" cellpadding="0" align="left" width="65%">
+				 <tbody><tr>
+				   <td>
+						<div style="position:relative;left:60px">
+							<iframe frameborder="0" scrolling="no" width="915" height="90" src="/bancolombia/contenido/login_BOLE_BC_zonaB.html"></iframe>
+						</div>
+				   </td>
+
+				 </tr>
+			</tbody></table>
+		</td>
+   </tr>
+ </tbody></table>
+
+ <script language="javascript">
+
+var flashinstalled = 0; // Put 2 in order to pass the checks and always put the flash cookie
+var flashversion = 0; // Put 6 in order to pass the checks and always put the flash cookie
+MSDetect = "false";
+
+// alert("navigator.plugins.length is: " + navigator.plugins.length + " , If it is 0 then there are no plugins");
+// alert("navigator.mimeTypes.length is: " + navigator.mimeTypes.length + " , If it is 0 then there are no mimetypes");
+
+if( navigator.plugins &amp;&amp; navigator.plugins.length ){
+    x = navigator.plugins["Shockwave Flash"];
+    //alert("Option 1 - you are probably using Firefox, Netscape, Opera or Safari browser");
+
+
+    if(x){
+        flashinstalled = 2;
+    }
+    else {
+        flashinstalled = 1;
+    }
+
+    if( navigator.plugins["Shockwave Flash 2.0"] ){
+        flashinstalled = 2;
+        flashversion = 2;
+        //alert("en navitator.plugins");
+    }
+}
+else if( navigator.mimeTypes &amp;&amp; navigator.mimeTypes.length ){
+    //alert("Option 2");
+    x = navigator.mimeTypes['application/x-shockwave-flash'];
+
+    if( x &amp;&amp; x.enabledPlugin ){
+        flashinstalled = 2;
+    }
+    else{
+        flashinstalled = 1;
+    }
+}
+else{
+    //alert("Option 3 - you are probably using IE browser");
+    MSDetect = "true";
+}
+
+</script>
+
+<script language="VBScript">
+
+on error resume next
+If MSDetect = "true" Then
+    For i = 2 to 10
+        If Not( IsObject( CreateObject( "ShockwaveFlash.ShockwaveFlash." &amp; i ) ) ) Then
+
+        Else
+            flashinstalled = 2
+            flashversion = i
+        End If
+    Next
+End If
+
+If flashinstalled = 0 Then
+    flashinstalled = 1
+End If
+</script>
+
+<script language="JavaScript" type="text/javascript">
+//alert("flashinstalled: " + flashinstalled + ", flashversion: " + flashversion);
+
+if ( flashinstalled == 2 ) {
+    var out = "";
+    out = out + "&lt;object type='application/x-shockwave-flash' data='/SVE/flash/rsa_fso.swf' classid='clsid:D27CDB6E-AE6D-11cf-96B8-444553540001'" + "\n";
+    out = out + "id='flash_id' width='1' height='1'&gt;" + "\n";
+    out = out + "&lt;param name='movie' value='/SVE/flash/rsa_fso.swf'&gt;" + "\n";
+    out = out + "&lt;param name='quality' value='high'&gt;" + "\n";
+    out = out + "&lt;param name='bgcolor' value='#FFFFFF'&gt;" + "\n";
+    out = out + "&lt;param name='FlashVars' value='rsa_flash_id=flash_id&amp;field_name=device_id&amp;ip_address=201.234.190.154' bufferLength='20'&gt;" + "\n";
+    out = out + "&lt;embed name='flash_id' swliveconnect='true' src='/SVE/flash/rsa_fso.swf'" + "\n";
+    out = out + "FlashVars='rsa_flash_id=flash_id&amp;field_name=device_id&amp;ip_address=201.234.190.154'" + "\n";
+    out = out + "quality='high' bgcolor='#FFFFFF' width='1' height='1'" + "\n";
+    out = out + "type='application/x-shockwave-flash'&gt;" + "\n";
+    out = out + "&lt;noobject&gt;&lt;/noobject&gt;" + "\n";
+    out = out + "&lt;/embed&gt;" + "\n";
+    out = out + "&lt;noobject&gt;&lt;/noobject&gt;" + "\n";
+    out = out + "&lt;/object&gt;" + "\n";
+
+    // alert("Finished with flash calling");
+    // document.write(out);
+}
+
+jQuery_1_12( "#dialog" ).dialog({
+	  modal: true,
+	  closeOnEscape: false,
+	  autoOpen: false,
+	  width: 500,
+      open: function(event, ui) {
+        jQuery_1_12(".ui-dialog-titlebar-close", ui.dialog | ui).hide();
+      },
+      hide: {
+        duration: 1000
+      },
+	  buttons: {
+        Regresar: function() {
+          jQuery_1_12( this ).dialog( "close" );
+		  var href = (window.location.href).split("control");
+		  window.location = href[0]+"control/BoleTransactional.bancolombia";
+        }
+      },
+	 classes: {
+		"ui-dialog-buttonset": "sve-dialog-buttonset",
+		"ui-dialog-titlebar": "sve-dialog-titlebar",
+		"ui-dialog-buttonpane": "sve-dialog-buttonpane",
+		"ui-dialog-content":  "sve-dialog-content",
+		"ui-button": "sve-button"
+	  }  	  
+    });
+	
+	var exceptionMessage = "";
+	var smExceptionMessage = "";
+	if (exceptionMessage!= "" || smExceptionMessage!=""){
+		jQuery_1_12( "#dialog" ).dialog("open");
+	}else{
+		jQuery_1_12( "#dialog" ).dialog("close");
+	}
+
+</script>
+
+
+
+</b><div tabindex="-1" role="dialog" class="ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ui-dialog-buttons ui-draggable ui-resizable" aria-describedby="dialog" aria-labelledby="ui-id-1" style="display: none; position: absolute;"><div class="ui-dialog-titlebar sve-dialog-titlebar ui-widget-header ui-helper-clearfix ui-draggable-handle"><span id="ui-id-1" class="ui-dialog-title">Atención</span><button type="button" class="ui-button ui-corner-all ui-widget ui-button-icon-only ui-dialog-titlebar-close" title="Close"><span class="ui-button-icon ui-icon ui-icon-closethick"></span><span class="ui-button-icon-space"> </span>Close</button></div><div id="dialog" class="ui-dialog-content sve-dialog-content ui-widget-content">
+		<div class="sve-dialog-header-text">
+			Verifique la información ingresada
+		</div>
+		<div class="sve-dialog-text">
+			
+			
+				
+			
+		</div>
+</div><div class="ui-dialog-buttonpane sve-dialog-buttonpane ui-widget-content ui-helper-clearfix"><div class="ui-dialog-buttonset sve-dialog-buttonset"><button type="button" class="ui-button ui-corner-all ui-widget">Regresar</button></div></div><div class="ui-resizable-handle ui-resizable-n" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-e" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-s" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-w" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-sw" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-ne" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-nw" style="z-index: 90;"></div></div></body></html>

@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Envio de pago de nomina por el canal SVE verificando pago exitoso en la tabla ARHIS de ISeries" skipped="0" tests="1" time="253.94" timestamp="2018-04-30T15:32:47.576-05:00[America/Bogota]"><testcase name="Enviar pago de Nomina por SVE"/></testsuite>

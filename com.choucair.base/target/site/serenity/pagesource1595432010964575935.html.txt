@@ -1,0 +1,59 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<title>Sucursal Virtual Empresas</title>
+
+<script language="JavaScript">&lt;!--
+function load_next() {
+
+    window.TransactionFrame.location.href = "MenuBuild.transacctions?processInstanceId=63172F745642D6E967C0A8A8E250494E&amp;activityInstanceId=63172FA0086799BC1FC0A8A8E241494E";
+
+}
+&lt;!-- Se crea variable global a ambos Frames R3933--&gt;
+var flagActive = false;
+
+function unloadMess(){
+    mess = "Antes de terminar su sesión, verifique que su solicitud ha sido procesada esperando la pantalla de confirmación. Si sale antes es posible que las operaciones no sean procesadas correctamente.";
+    return mess;
+}
+
+window.onbeforeunload = function(){
+	             if(flagActive){
+                 	if((window.event.clientX&lt;0) || (window.event.clientY&lt;0)){
+                     	 return unloadMess();}
+                	 }
+				  }
+
+function extend(){
+	//ENH-000032 Fase 2: realinea el menu si el centro de mensajes esta activo
+	var cic_active = "active";
+	if(cic_active = "active"){
+		document.getElementById('frameSetPpal').rows='115,*';
+	}
+ }
+
+//ENH-000032 Fase 2: funcion que redirige al nuevo centro de mensajes cuando se da clic en la imagen del sobre en la parte superior derecha de la pantalla
+function load_cicMC(){
+	try{
+		var loginText = "";
+		loginText += window.MenuFrame.inboxId.innerHTML+"";
+		if(loginText == null || loginText == ""){
+			window.TransactionFrame.submit_cicMC();
+		} else {
+			window.TransactionFrame.submit_cicMC_value("si");
+		}
+	} catch(err){
+	}
+}
+
+// - Se borra el history, para evitar que se use el boton Atras en todos los navegadores
+window.history.forward(1);				  
+window.onpageshow = function (evt) {
+if (evt.persisted) window.onload();
+}	
+</script>
+
+</head><frameset id="frameSetPpal" rows="115,*" cols="100%" onload="load_next();extend()">
+<frame src="MenuBuild.load?processInstanceId=63172F745642D6E967C0A8A8E250494E&amp;activityInstanceId=63172FA0086799BC1FC0A8A8E241494E" name="MenuFrame" frameborder="0" border="0" scrolling="NO" noresize="" />
+<frame src="/bancolombia/loading.htm" name="TransactionFrame" frameborder="0" border="0" scrolling="AUTO" resize="YES" />
+</frameset>
+
+</html>

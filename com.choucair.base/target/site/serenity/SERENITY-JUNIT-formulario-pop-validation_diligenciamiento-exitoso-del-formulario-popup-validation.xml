@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="Formulario Pop Validation" skipped="0" tests="1" time="3.84" timestamp="2018-06-22T14:20:06.886-05:00[America/Bogota]"><testcase name="Diligenciamiento exitoso del formulario popup validation"><error message="Could not instantiate new WebDriver instance of type class org.openqa.selenium.ie.InternetExplorerDriver (Unexpected error launching Internet Explorer. Protected Mode settings are not the same for all zones. Enable Protected Mode must be set to the same value (enabled or disabled) for all zones.&#10;Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'&#10;System info: host: 'CHMEPPF10MS15', ip: '172.17.27.150', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'&#10;Driver info: driver.version: InternetExplorerDriver&#10;remote stacktrace: " type="net.thucydides.core.webdriver.UnsupportedDriverException">Could not instantiate new WebDriver instance of type class org.openqa.selenium.ie.InternetExplorerDriver (Unexpected error launching Internet Explorer. Protected Mode settings are not the same for all zones. Enable Protected Mode must be set to the same value (enabled or disabled) for all zones.
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'CHMEPPF10MS15', ip: '172.17.27.150', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: driver.version: InternetExplorerDriver
+remote stacktrace: </error><system-err>Could not instantiate new WebDriver instance of type class org.openqa.selenium.ie.InternetExplorerDriver (Unexpected error launching Internet Explorer. Protected Mode settings are not the same for all zones. Enable Protected Mode must be set to the same value (enabled or disabled) for all zones.
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'CHMEPPF10MS15', ip: '172.17.27.150', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: driver.version: InternetExplorerDriver
+remote stacktrace: &#13;
+com.choucair.formacion.steps.popupValidationSteps.login_ColorLib(popupValidationSteps.java:18)&#13;
+com.choucair.formacion.definition.PopupValidationDefinition.autentico_colorlib_con_usuario_y_password(PopupValidationDefinition.java:35)&#13;
+com.choucair.formacion.RunnerPersonalizado.run(RunnerPersonalizado.java:59)&#13;
+org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)&#13;
+org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)&#13;
+org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:538)&#13;
+org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:760)&#13;
+org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:460)&#13;
+org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:206)&#13;
+</system-err></testcase></testsuite>

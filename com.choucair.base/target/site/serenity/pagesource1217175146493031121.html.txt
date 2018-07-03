@@ -1,0 +1,1578 @@
+<!-- /transacciones/pago_lotes_nuevo.jsp - BatchPaymentsCreate --><html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+<title>Sucursal Virtual Empresas</title>
+<script language="JavaScript1.2" src="/js/validar.js"></script>
+<script language="JavaScript1.2" src="/js/date.js"></script>
+<script language="JavaScript1.2" src="/js/printPage.js"></script>
+<script language="JavaScript1.2" src="/js/F5OFF.js"></script>
+
+
+</head><body bgcolor="#ffffff" onunload="javascript:closeNewWindow()" topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"><div id="help_popup2Izq"></div><div id="help_popup2"></div><div id="help_popup"></div><div id="help_popupIzq"></div>
+
+
+
+
+<div id="error_popupTopLeft" style="position: absolute; width: 175px; text-align: left; z-index: 1001; display:none;  ">
+    <div style="padding: 2px;" id="error_popup_inner">
+        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+            <tbody><tr>
+                <th class="m-tlr" width="6" height="5"><img src="/bancolombia/images/m-tlr.gif" /></th>
+                <th bgcolor="#ff2000" width="500px"></th>
+                <th class="m-trr" valign="top" width="6" height="5"><img src="/bancolombia/images/m-trr.gif" /></th>
+                </tr>
+                <tr>
+                    <th colspan="3" style="border-left: 1px solid rgb(255, 32, 0); padding-left: 3px; padding-right: 3px;" bgcolor="#ff2000"><div id="error_popupTopLeftTitle" class="globe_header" align="center"></div></th>
+                </tr>
+                <tr>
+                    <th colspan="3" style="border-left: 1px solid rgb(255, 32, 0); border-right: 1px solid rgb(255, 32, 0); padding: 3px;" bgcolor="#ffffff"><div style="margin-top: 3px; margin-bottom: 3px;" id="error_popupTopLeftText" class="globe_cont"></div></th>
+                </tr>
+                <tr>
+                    <th colspan="3"><table border="0" cellpadding="0" cellspacing="0" width="100%">
+                            <tbody><tr>
+                                <th scope="col" align="right" valign="top"><img src="/bancolombia/images/help_box_bottomrightIZ.gif" width="10" height="31" /></th>
+                                <th scope="col" width="100%" style="background-image:url(/bancolombia/images/help_box_bottom.gif)"></th>
+                                <th scope="col" align="left" valign="top"><img src="/bancolombia/images/help_box_bottomleftIZ.gif" width="35" height="31" /></th>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </th>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div id="error_popupBottomLeft" style="position: absolute; width: 175px; text-align: left; z-index: 1001; display:none">
+    <div style="padding: 2px;" id="error_popup_inner2">
+        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+            <tbody><tr>
+                <th colspan="3"><table border="0" cellpadding="0" cellspacing="0" width="100%" height="6">
+                            <tbody><tr>
+                                <th scope="col" align="right" valign="top"><img src="/bancolombia/images/help_box_bottomrightIZ_up.gif" /></th>
+                                <th scope="col" width="100%" style="background-image:url(/bancolombia/images/help_box_bottom_up.gif)"> </th>
+                                <th scope="col" align="left" valign="top"><img src="/bancolombia/images/help_box_bottomleftIZ_up.gif" width="35" height="31" /></th>
+                            </tr>
+                        </tbody></table>
+                    </th>
+                </tr>
+                <tr>
+                    <th colspan="3" style="border-left: 1px solid rgb(255, 32, 0); padding-left: 3px; padding-right: 3px;" bgcolor="#ff2000"><div id="error_popupBottomLeftTitle" class="globe_header" align="center"></div></th>
+                </tr>
+                <tr>
+                    <th colspan="3" style="border-left: 1px solid rgb(255, 32, 0); border-right: 1px solid rgb(255, 32, 0); padding: 3px;" bgcolor="#ffffff"><div style="margin-top: 3px; margin-bottom: 3px;" id="error_popupBottomLeftText" class="globe_cont"></div></th>
+                </tr>
+                <tr>
+                    <th colspan="3"><table border="0" cellpadding="0" cellspacing="0" width="100%" height="6">
+                            <tbody><tr>
+                                <th scope="col" align="right" valign="top"><img src="/bancolombia/images/help_box_bottomrightIZ_down.gif" width="10" height="6" /></th>
+                                <th scope="col" width="100%" style="background-image:url(/bancolombia/images/help_box_bottom.gif)"></th>
+                                <th scope="col" align="left" valign="top"><img src="/bancolombia/images/help_box_bottomright_down.gif" width="10" height="6" /></th>
+                            </tr>
+                        </tbody></table>
+                    </th>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div id="error_popupTopRight" style="position: absolute; width: 175px; text-align: left; z-index: 1001; display:none">
+    <div style="padding: 2px;" id="error_popup_inner">
+        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+            <tbody><tr>
+                <th class="m-tlr" bgcolor="#ff2000" width="6" height="5"><img src="/bancolombia/images/m-tlr.gif" /></th>
+                <th bgcolor="#ff2000" width="500px"></th>
+                <th class="m-trr" valign="top" width="6" height="5"><img src="/bancolombia/images/m-trr.gif" /></th>
+            </tr>
+            <tr>
+                <th colspan="3" style="border-left: 1px solid rgb(255, 32, 0); padding-left: 3px; padding-right: 3px;" bgcolor="#ff2000"><div id="error_popupTopRightTitle" class="globe_header" align="center"></div></th>
+            </tr>
+            <tr>
+                <th colspan="3" style="border-left: 1px solid rgb(255, 32, 0); border-right: 1px solid rgb(255, 32, 0); padding: 3px;" bgcolor="#ffffff"><div style="margin-top: 3px; margin-bottom: 3px;" id="error_popupTopRightText" class="globe_cont"></div></th>
+            </tr>
+            <tr>
+                <th colspan="3"><table border="0" cellpadding="0" cellspacing="0" width="100%">
+                    <tbody><tr>
+                        <th scope="col" align="left" valign="top"><img src="/bancolombia/images/help_box_bottomleft.gif" width="35" height="31" /></th>
+                        <th width="100%" scope="col" style="background-image:url(/bancolombia/images/help_box_bottom.gif)"></th>
+                        <th scope="col" align="right" valign="top"><img src="/bancolombia/images/help_box_bottomright.gif" width="10" height="31" /></th>
+                        </tr>
+                    </tbody>
+                </table>
+            </th>
+        </tr>
+        </tbody>
+        </table>
+    </div>
+</div>
+
+
+<div id="error_popupBottomRight" style="position: absolute; width: 175px; text-align: left; z-index: 1001; display:none">
+    <div style="padding: 2px;" id="error_popup_inner2">
+        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+            <tbody><tr>
+                <th colspan="3"><table border="0" cellpadding="0" cellspacing="0" width="100%" height="6">
+                    <tbody><tr>
+                        <th scope="col" align="right" valign="top"><img src="/bancolombia/images/help_box_bottomleft_up.gif" /></th>
+                        <th scope="col" width="100%" style="background-image:url(/bancolombia/images/help_box_bottom_up.gif)"> </th>
+                        <th scope="col" align="left" valign="top"><img src="/bancolombia/images/help_box_bottomright_up.gif" width="10" height="31" /></th>
+                    </tr></tbody></table>
+                </th></tr>
+                <tr>
+                    <th colspan="3" style="border-left: 1px solid rgb(255, 32, 0); padding-left: 3px; padding-right: 3px;" bgcolor="#ff2000"><div id="error_popupBottomRightTitle" class="globe_header" align="center"></div></th>
+                </tr>
+                <tr>
+                    <th colspan="3" style="border-left: 1px solid rgb(255, 32, 0); border-right: 1px solid rgb(255, 32, 0); padding: 3px;" bgcolor="#ffffff"><div style="margin-top: 3px; margin-bottom: 3px;" id="error_popupBottomRightText" class="globe_cont"></div></th>
+                </tr>
+                <tr>
+                    <th colspan="3"><table border="0" cellpadding="0" cellspacing="0" width="100%" height="6">
+                        <tbody><tr>
+                            <th scope="col" align="right" valign="top"><img src="/bancolombia/images/help_box_bottomrightIZ_down.gif" width="10" height="6" /></th>
+                            <th scope="col" width="100%" style="background-image:url(/bancolombia/images/help_box_bottom.gif)"></th>
+                            <th scope="col" align="left" valign="top"><img src="/bancolombia/images/help_box_bottomright_down.gif" width="10" height="6" /></th>
+                         </tr>
+                        </tbody></table></th>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+
+  
+<div id="help_popupTopRight" style="position: absolute; width: 175px; text-align: left; z-index: 1001; display: none;">
+  <div style="padding: 2px;" id="help_popup_inner2"> 
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tbody><tr>
+    <th class="m-tl" width="6" height="5"><img src="/bancolombia/images/m-tl.gif" /></th>
+    <th bgcolor="#000080" width="1000px"></th>
+    <th class="m-tr" valign="top" width="6" height="5"><img src="/bancolombia/images/m-tr.gif" /></th>
+  </tr>
+  <tr>
+    <th colspan="3" style="border-left: 1px solid rgb(0, 0, 128); padding-left: 3px; padding-right: 3px;" bgcolor="#000080"><div id="help_popupTopRightTitle" class="globe_header" align="center"></div></th>
+    </tr>
+  <tr>
+    <th colspan="3" style="border-left: 1px solid rgb(0, 0, 128); border-right: 1px solid rgb(0, 0, 128); padding: 3px;" bgcolor="#ffffff"><div style="margin-top: 3px; margin-bottom: 3px;" id="help_popupTopRightText" class="globe_cont"></div></th>
+    </tr>
+  <tr>
+    <th colspan="3"><table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tbody><tr>
+        <th scope="col" align="left" valign="top"><img src="/bancolombia/images/help_box_bottomleftC.gif" width="35" height="31" /></th>
+        <th scope="col" width="100%" style="background-image:url(/bancolombia/images/help_box_bottomC.gif)"></th>
+        <th scope="col" align="right" valign="top"><img src="/bancolombia/images/help_box_bottomrightC.gif" width="10" height="31" /></th>
+      </tr>
+    </tbody></table></th>
+    </tr>
+</tbody></table>
+</div>
+</div>
+
+<div id="help_popupTopLeft" style="position: absolute; width: 175px; text-align: left; z-index: 1001; display: none;">
+  <div style="padding: 2px;" id="help_popup_inner2"> 
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tbody><tr>
+    <th class="m-tl" width="6" height="5"><img src="/bancolombia/images/m-tl.gif" /></th>
+    <th bgcolor="#000080" width="100%"></th>
+    <th class="m-tr" valign="top" width="6" height="5"><img src="/bancolombia/images/m-tr.gif" /></th>
+  </tr>
+  <tr>
+    <th colspan="3" style="border-left: 1px solid rgb(0, 0, 128); padding-left: 3px; padding-right: 3px;" bgcolor="#000080"><div id="help_popupTopLeftTitle" class="globe_header" align="center"></div></th>
+    </tr>
+  <tr>
+    <th colspan="3" style="border-left: 1px solid rgb(0, 0, 128); border-right: 1px solid rgb(0, 0, 128); padding: 3px;" bgcolor="#ffffff"><div style="margin-top: 3px; margin-bottom: 3px;" id="help_popupTopLeftText" class="globe_cont"></div></th>
+    </tr>
+  <tr>
+    <th colspan="3"><table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tbody><tr>
+        <th scope="col" align="right" valign="top"><img src="/bancolombia/images/help_box_bottomrightCIZ.gif" width="10" height="31" /></th>
+        <th scope="col" width="100%" style="background-image:url(/bancolombia/images/help_box_bottomC.gif)"></th>
+        <th scope="col" align="left" valign="top"><img src="/bancolombia/images/help_box_bottomleftCIZ.gif" width="35" height="31" /></th>
+      </tr>
+      </tbody></table></th>
+    </tr>
+</tbody></table>
+</div>
+</div>
+
+<div id="help_popupBottomLeft" style="position: absolute; width: 175px; text-align: left; z-index: 1001; display: none;">
+  <div style="padding: 2px;" id="help_popup_inner2"> 
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tbody><tr>
+    <th colspan="3"><table border="0" cellpadding="0" cellspacing="0" width="100%" height="6">
+    <tbody><tr>
+        <th scope="col" align="right" valign="top"><img src="/bancolombia/images/help_box_bottomrightCIZ_up.gif" /></th>
+        <th scope="col" width="100%" style="background-image:url(/bancolombia/images/help_box_bottomC_up.gif)"> </th>
+        <th scope="col" align="left" valign="top"><img src="/bancolombia/images/help_box_bottomleftCIZ_up.gif" width="35" height="31" /></th>
+      </tr>
+      </tbody></table></th>
+    </tr>
+  <tr>
+    <th colspan="3" style="border-left: 1px solid rgb(0, 0, 128); padding-left: 3px; padding-right: 3px;" bgcolor="#000080"><div id="help_popupBottomLeftTitle" class="globe_header" align="center"></div></th>
+    </tr>
+  <tr>
+    <th colspan="3" style="border-left: 1px solid rgb(0, 0, 128); border-right: 1px solid rgb(0, 0, 128); padding: 3px;" bgcolor="#ffffff"><div style="margin-top: 3px; margin-bottom: 3px;" id="help_popupBottomLeftText" class="globe_cont"></div></th>
+    </tr>
+  <tr>
+    <th colspan="3"><table border="0" cellpadding="0" cellspacing="0" width="100%" height="6">
+    <tbody><tr>
+        <th scope="col" align="right" valign="top"><img src="/bancolombia/images/help_box_bottomrightCIZ-down.gif" width="10" height="6" /></th>
+        <th scope="col" width="100%" style="background-image:url(/bancolombia/images/help_box_bottomC.gif)"></th>
+        <th scope="col" align="left" valign="top"><img src="/bancolombia/images/help_box_bottomrightC_down.gif" width="10" height="6" /></th>
+      </tr>
+      </tbody></table></th>
+    </tr>
+</tbody></table>
+</div>
+</div>
+
+<div id="help_popupBottomRight" style="position: absolute; width: 175px; text-align: left; z-index: 1001; display: none;">
+  <div style="padding: 2px;" id="help_popup_inner2"> 
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tbody><tr>
+    <th colspan="3"><table border="0" cellpadding="0" cellspacing="0" width="100%" height="6">
+    <tbody><tr>
+        <th scope="col" align="left" valign="top"><img src="/bancolombia/images/help_box_bottomleftC_up.gif" width="35" height="31" /></th>
+        <th scope="col" width="100%" style="background-image:url(/bancolombia/images/help_box_bottomC_up.gif)"> </th>
+        <th scope="col" align="right" valign="top"><img src="/bancolombia/images/help_box_bottomrightC_up.gif" /></th>
+      </tr>
+      </tbody></table></th>
+    </tr>
+  <tr>
+    <th colspan="3" style="border-left: 1px solid rgb(0, 0, 128); padding-left: 3px; padding-right: 3px;" bgcolor="#000080"><div id="help_popupBottomRightTitle" class="globe_header" align="center"></div></th>
+    </tr>
+  <tr>
+    <th colspan="3" style="border-left: 1px solid rgb(0, 0, 128); border-right: 1px solid rgb(0, 0, 128); padding: 3px;" bgcolor="#ffffff"><div style="margin-top: 3px; margin-bottom: 3px;" id="help_popupBottomRightText" class="globe_cont"></div></th>
+    </tr>
+  <tr>
+    <th colspan="3"><table border="0" cellpadding="0" cellspacing="0" width="100%" height="6">
+    <tbody><tr>
+        <th scope="col" align="right" valign="top"><img src="/bancolombia/images/help_box_bottomrightCIZ-down.gif" width="10" height="6" /></th>
+        <th scope="col" width="100%" style="background-image:url(/bancolombia/images/help_box_bottomC.gif)"></th>
+        <th scope="col" align="left" valign="top"><img src="/bancolombia/images/help_box_bottomrightC_down.gif" width="10" height="6" /></th>
+      </tr>
+      </tbody></table></th>
+    </tr>
+</tbody></table>
+</div>
+</div>
+
+
+
+<link rel="stylesheet" href="/bancolombia/styles.css" type="text/css" />
+<link rel="stylesheet" href="/bancolombia/tipos.css" type="text/css" />
+
+	
+<script src="/js/jquery-min.js" type="text/javascript"></script>
+<script src="/js/jquery.validate_t1-min.js" type="text/javascript"></script>
+<script src="/js/jquery.jclock-min.js" type="text/javascript"></script>
+<script src="/js/pt.bubble-min.js" type="text/javascript"></script>
+<script src="/js/pt.loadImages-min.js" type="text/javascript"></script>
+<script src="/js/jquery.metadata-min.js" type="text/javascript"></script>
+<script src="/js/jquery.bgiframe-min.js" type="text/javascript"></script>
+<script src="/js/genericScripts.js" type="text/javascript"></script>
+
+<script language="JavaScript1.2" src="/js/printPage.js"></script>
+<script language="JavaScript1.2" src="/js/validar.js"></script>
+<script language="JavaScript1.2" src="/js/F5OFF.js"></script>
+
+<script>
+	function deshabilitarBotones(value){
+  		elementosFormu = $('#'+value+' input:button, :submit');
+  		elementosFormu.each(function () {
+        $(this).attr("disabled",true);
+  		});
+		}
+
+	function habilitarBotones(value){
+  		elementosFormu = $('#'+value+' input:button, :submit');
+  		elementosFormu.each(function () {
+        $(this).attr("disabled",false);
+  		});
+		}
+
+	function disableLink(value){
+			var element = document.getElementById(value);
+			if (typeof element === 'undefined' || element === null) {
+			
+			}else{
+			element.setAttribute('className', "disabled_link"); 
+			element.setAttribute('class', "disabled_link");
+			}
+	}
+
+		function setearTamanioInput(value, name1){
+			var currentWidest = 0;
+				selectFormu = $('#'+value+' select');  
+				selectFormu.each(function () {
+					var name = this.name;
+					if($(this).width() &gt; currentWidest) { currentWidest = $(this).width(); }
+				});
+				currentWidest = currentWidest + 5;
+				selectFormu.each(function () {
+						$(this).css({'width': currentWidest});
+				});
+				inputFormu = $('#'+value+' input:not(:button, :submit)');  
+								inputFormu = $('#'+value+' input:not(:button, :submit, :hidden)');  
+				inputFormu.each(function () {
+					var title = this.title;
+					if (title != "false")
+						$(this).css({'width': currentWidest});
+				});
+				textAreaFormu = $('#'+value+' textarea');  
+				textAreaFormu.each(function () {
+					var modificar = this.modificar;
+					if (modificar != "false")
+						$(this).css({'width': currentWidest});
+				});
+			}	
+	
+	  	function pintarSelect(value,element,param){ 
+		var TD_Id = param[0];
+		if(value=="") {
+			if ( $.browser.msie ){
+				document.getElementById(TD_Id).style.border="1px solid #ff0000";
+				}
+			return false;
+			}
+		if ( $.browser.msie ){
+				document.getElementById(TD_Id).style.border="0px solid #000000";
+				}
+		return true;	
+	}
+
+</script>
+
+
+
+<style type="text/css">
+.espacioSimple{	height:13px;}
+/*para el td que contiene  la etiqueta ShowRecoverableError. Son 26- 4 px de cada borde de los td*/
+.espacioDoble{  height:26px;}
+/*para el td que contiene  la etiqueta ShowInfo. son 39px del espacio triple mas 8 del renglon para el texto de la descripcion. En total son 47px*/
+.espacioTriple{	height:39px; vertical-align:bottom;}
+.subTitulo{font-size: 10pt; font-weight: bold;}
+a.disabled_link{ pointer-events:none;}
+</style>
+
+
+
+<link rel="stylesheet" href="/bancolombia/ui.datepicker_t1.css" type="text/css" />
+
+<script src="/js/ui.datepicker_t1-min.js" type="text/javascript"></script>
+
+	<script>
+	
+	  
+	
+
+
+
+	function lastDayOfYear(year){
+		return new Date(year, 11, 31);
+	}
+
+
+	function minDateAnios(number){
+		var actualDate = new Date();
+		var year= actualDate.getFullYear();
+		return new Date(year-number, 1-1, 1);
+	}
+
+	
+	function minDateMeses(number){
+		var actualDate = new Date();
+		var year = actualDate.getFullYear();
+		var month= actualDate.getMonth();
+		return new Date(year, month-number, 1);
+	
+	}
+	
+	
+	function maxDateMeses(number){
+		var actualDate = new Date();
+		var year = actualDate.getFullYear();
+		var month = actualDate.getMonth();
+		return new Date(year, month+number, 1);
+	}
+	
+	  
+	function maxDateMesesDias(number){
+		var actualDate = new Date();
+		var year = actualDate.getFullYear();
+		var month = actualDate.getMonth();
+		var day = actualDate.getDate();
+		return new Date(year, month+number, actualDate.getDate());
+	}
+	
+	
+	function fechaMesesMayor(value,cant) { 
+		var arregloHasta = value.split('/');
+		var hastaDate = new Date(arregloHasta[2],arregloHasta[1]-1,arregloHasta[0]);
+		var fechaActual = new Date();
+		var limite= new Date(fechaActual.getFullYear(),parseInt(fechaActual.getMonth()) + parseInt(cant),1);
+		
+		var fechaActualAux = new Date(fechaActual.getFullYear(),fechaActual.getMonth(),fechaActual.getDate());
+		
+	
+		if (hastaDate &lt;= limite &amp;&amp; hastaDate &gt;= fechaActualAux)
+			return true;
+		return false;
+		}
+	
+	
+	function fechaMesesDiasMayor(value,cant) { 
+		var arregloHasta = value.split('/');
+		var hastaDate = new Date(arregloHasta[2],arregloHasta[1]-1,arregloHasta[0]);
+		var fechaActual = new Date();
+		var diaActual = fechaActual.getDate();
+		var limite= new Date(fechaActual.getFullYear(),parseInt(fechaActual.getMonth()) + parseInt(cant),diaActual);
+		
+		var fechaActualAux = new Date(fechaActual.getFullYear(),fechaActual.getMonth(),fechaActual.getDate());
+		
+	
+		if (hastaDate &lt;= limite &amp;&amp; hastaDate &gt;= fechaActualAux)
+			return true;
+		return false;
+		}
+	
+	
+	function validarRango(forma) {
+		var arregloDesde = document[forma].desde.value.split('/');
+		var arregloHasta = document[forma].hasta.value.split('/');
+		var desdeDate = new Date(arregloDesde[2],arregloDesde[1]-1,arregloDesde[0]);
+		var hastaDate = new Date(arregloHasta[2],arregloHasta[1]-1,arregloHasta[0]);   
+		if ( desdeDate &gt; hastaDate) {
+			return false;
+		   }
+	   return true;
+		} 
+		
+	
+	function validarRangoFecha(value, forma, year){ 
+		var arregloFecha = value.split('/');
+		var desdeDate = new Date(arregloFecha[2],arregloFecha[1]-1,arregloFecha[0]);
+		var dateLong = desdeDate.getTime();
+		var dateActual= new Date();
+		var fechaMAx= new Date(year, 11, 31);
+		
+		if ((dateLong &lt;= dateActual) || (dateLong&gt;fechaMAx)) {
+			return false;
+			}
+		return true;
+	 	}
+		   
+	
+	function validarFechaMayorActual(value, forma){ 
+		var arregloFecha = value.split('/');
+		var desdeDate = new Date(arregloFecha[2],arregloFecha[1]-1,arregloFecha[0]);
+		var dateLong = desdeDate.getTime();
+		var dateActual= new Date();
+		if ( dateLong &lt;= dateActual) {
+			return false;
+			}
+		return true;
+	 	}
+		
+	
+	function fechaMesesMenor(value,cant) { 
+
+		var arregloDesde = value.split('/');
+		var desdeDate = new Date(arregloDesde[2],arregloDesde[1]-1,arregloDesde[0]);
+		var fechaActual = new Date();
+		var limite= new Date(fechaActual.getFullYear(),fechaActual.getMonth()-cant,1);
+
+		if (desdeDate &gt;= limite &amp;&amp; desdeDate &lt;= fechaActual)
+			return true;
+		return false;
+		}
+
+	
+	function fechaYearsMenor(value, cant) { 
+		var arregloDesde = value.split('/');
+		var desdeDate = new Date(arregloDesde[2],arregloDesde[1]-1,arregloDesde[0]);
+		var fechaActual = new Date();
+		var limite= new Date(fechaActual.getFullYear()-cant,0,1);
+		if (desdeDate &gt;= limite &amp;&amp; desdeDate &lt;= fechaActual)
+			return true;
+		return false;
+		}
+		
+
+		
+	
+	function validarFechaMayorOIgualActual(value, forma){ 
+		var arregloFecha = value.split('/');
+		
+		
+		
+		var desdeDate = new Date(arregloFecha[2],arregloFecha[1]-1,arregloFecha[0],11,0,0);
+		var dateLong = desdeDate.getTime();
+		var dateActual= new Date();
+		dateActual.setHours(0); 
+		dateActual.setMinutes(0); 
+		dateActual.setSeconds(0); 
+		if ( desdeDate &lt; dateActual) {
+			return false;
+			}
+		return true;
+	 	}	
+		
+	
+		
+	
+	
+	function validarFechaMenorOIgualActual(value, forma){ 
+		var arregloFecha = value.split('/');
+		var hastaDate = new Date(arregloFecha[2],arregloFecha[1]-1,arregloFecha[0],11,0,0);
+		
+		var dateLimiteInfTxt= "01/01/2018";
+		var arrLimiteInf = dateLimiteInfTxt.split('/');
+		var dateLimiteInf = new Date(arrLimiteInf[2],arrLimiteInf[1]-1,arrLimiteInf[0],11,0,0);
+		
+		var dateActual= new Date();
+		dateActual.setHours(11); 
+		dateActual.setMinutes(0); 
+		dateActual.setSeconds(0); 		
+	
+		if (( hastaDate &gt;= dateLimiteInf)&amp;(hastaDate &lt;= dateActual)) {
+			return true;
+			}
+		return false;
+	 	}	
+		
+		
+	
+	
+	
+	
+	
+	function validarFechaDesde(value, forma){ 	
+		var arregloFecha = value.split('/');
+		var desdeDate = new Date(arregloFecha[2],arregloFecha[1]-1,arregloFecha[0],11,0,0);
+
+		var dateLimiteInfTxt= "01/01/2018";
+		var arrLimiteInf = dateLimiteInfTxt.split('/');
+		var dateLimiteInf = new Date(arrLimiteInf[2],arrLimiteInf[1]-1,arrLimiteInf[0],11,0,0);
+		
+		var dateLimiteSup=new Date();
+		dateLimiteSup.setHours(11); 
+		dateLimiteSup.setMinutes(0); 
+		dateLimiteSup.setSeconds(0); 
+		
+		if ((desdeDate &gt;= dateLimiteInf)&amp;(desdeDate &lt;= dateLimiteSup)){
+			return true;}
+		return false;		
+	}
+
+	
+	function isDateDDMMYYYY(field){
+	  if(field.value.length != 10){
+	    return false;
+	  }else if(field.value.substring(2,3) != "/" || field.value.substring(5,6) != "/"){
+	    return false;
+	  }else if(isNaN(field.value.substring(0,2)) || isNaN(field.value.substring(3,5))){
+	    return false;
+	  }
+	
+	  
+	  var day   = field.value.substring(0,2);
+	  var month = field.value.substring(3,5);
+	  var year  = field.value.substring(6,10);
+	     if (isNaN(year) || parseInt(year)&lt; 1800) {
+	  	return false;
+	  }
+	
+	  var monthint;
+	  if (month.substring(0,1) != '0') {
+	    monthint = parseInt(month);
+	  }
+	  else {
+	    monthint = parseInt(month.substring(1,2));
+	  }
+	  var dayint;
+	  if (day.substring(0,1) != '0') {
+	    dayint = parseInt(day);
+	  }
+	  else {
+	    dayint = parseInt(day.substring(1,2));
+	  }
+	  var yearint = parseInt(year);
+	
+	  
+	  
+	  var date = new Date(yearint, monthint - 1, dayint);
+	
+	  
+	  if (date.getYear().length == 2) {
+	      if ((date.getYear() + 1900) != yearint) {
+	          return false;
+	      }
+	  }
+	  
+	  
+	  if (date.getYear().length == 4) {
+	      if (date.getYear() != yearint) {
+	          return false;
+	      }
+	  }
+	
+	  if (((date.getMonth() + 1) != monthint) ||
+	      (date.getDate() != dayint)) {
+	      return false;
+	  }
+	  
+	  return true;
+	}
+
+	
+	
+	
+
+	  
+	
+	
+	
+	
+	
+
+	var isSeeAllDay= false;
+	var natDays=[];
+	
+	
+		var natDays= [[10, 17, 2011], [11, 07, 2011] ,  [11, 14, 2011] ,  [12, 08, 2011] ,  [01, 01, 2012] ,  [01, 09, 2012] ,  [03, 19, 2012] ,  [04, 01, 2012] ,  [04, 05, 2012] ,  [04, 06, 2012] ,  [04, 08, 2012] ,  [05, 01, 2012],  [05, 21, 2012] ,  [06, 11, 2012] ,  [06, 18, 2012] ,  [07, 02, 2012] ,  [07, 20, 2012],  [08, 07, 2012],  [08, 20, 2012] ,  [10, 15, 2012], [11, 05, 2012] ,  [11, 12, 2012] ,  [12, 08, 2012] ,  [12, 25, 2012], [01, 01, 2013], [01, 07, 2013], [03, 24, 2013], [03, 25, 2013], [03, 28, 2013], [03, 29, 2013], [03, 31, 2013], [05, 01, 2013], [05, 13, 2013], [06, 03, 2013], [06, 10, 2013], [07, 01, 2013], [07, 20, 2013], [08, 07, 2013], [08, 19, 2013], [10, 14, 2013], [11, 04, 2013], [11, 11, 2013], [12, 08, 2013], [12, 25, 2013], [01, 01, 2014], [01, 06, 2014], [03, 24, 2014], [04, 17, 2014], [04, 18, 2014], [05, 01, 2014], [06, 02, 2014], [06, 23, 2014], [06, 30, 2014], [08, 07, 2014], [08, 18, 2014], [10, 13, 2014], [11, 03, 2014], [11, 17, 2014], [12, 08, 2014], [12, 25, 2014]];
+    
+	
+	function esFeriado(date) { 
+
+		var arregloFecha = date.split('/'); &lt;!--dd/mm/aaaa--&gt;
+
+		var date1=new Date(arregloFecha[2],arregloFecha[1]-1,arregloFecha[0]);
+		var day = date1.getDay();
+		
+		var isWeekend = (day == 6) || (day == 0);    // 6 = Saturday, 0 = Sunday
+		if (isWeekend)
+			return false;
+		
+		for (i = 0; i &lt; natDays.length; i++) { 
+		if ((parseInt(arregloFecha[1],10) == parseInt(natDays[i][0],10)) &amp;&amp; (parseInt(arregloFecha[0],10) == parseInt(natDays[i][1],10)) &amp;&amp; (arregloFecha[2] == natDays[i][2])) {		
+			return false; 
+			} 
+		} 
+		return true; 
+	} 
+	
+	
+	
+	function resaltarDiasFeriados(date) { 
+		var m = date.getMonth(); 
+		var d = date.getDate(); 
+		var y = date.getFullYear(); 
+		for (i = 0; i &lt; natDays.length; i++) { 
+			if ((m == natDays[i][0] - 1) &amp;&amp; (d == natDays[i][1]) &amp;&amp; (y == natDays[i][2])) { 
+				return [true, "datepicker_daysCell datepicker_weekEndCell ui-state-default",natDays[i][3]]; 
+			} 
+		} 
+		return [true]; 
+	} 
+
+	
+	
+	
+	function diasFeriados(date) { 
+		var m = date.getMonth(); 
+		var d = date.getDate(); 
+		var y = date.getFullYear(); 
+		for (i = 0; i &lt; natDays.length; i++) { 
+			if ((m == natDays[i][0] - 1) &amp;&amp; (d == natDays[i][1]) &amp;&amp; (y == natDays[i][2])) { 
+			return [false,,natDays[i][3]]; 
+			} 
+		} 
+		return [true]; 
+	} 
+
+	
+	
+	
+	function noFeriadosNiFinesSemanas(date) { 
+		if(isSeeAllDay) return [true]; 
+		var noWeekend = $.datepicker.noWeekends(date);
+				if (noWeekend[0]) { 
+			return diasFeriados(date); 
+		} else { 
+			return noWeekend; 
+		} 
+	} 
+	
+	
+	
+	
+	function resaltarFeriados(date) { 
+		if(isSeeAllDay) return [true]; 
+		var noWeekend = $.datepicker.noWeekends(date); 
+		if (noWeekend[0]) { 
+			return resaltarDiasFeriados(date); 
+		} 
+		return [true];
+	} 
+	
+	
+	
+	function validateDateMinYear(value, minYearValue){
+		var arrayDate = value.split('/');
+		var checkYear = arrayDate[2];
+		if(checkYear &lt; minYearValue) return false;
+		return true;
+	}
+	
+	
+</script>
+
+
+<script language="JavaScript"> 
+	$(document).ready(function() {
+		var actualDate = new Date();
+		var year= actualDate.getFullYear();
+		$('#date').datepicker({minDate:'0y', maxDate: lastDayOfYear(year+1), beforeShowDay: resaltarFeriados}); //D22387
+
+		backendErrors(); //PRJ-001961
+
+		$("#forma").bind("invalid-form.validate", function() {		    
+				$("#summary").html("&lt;tr&gt;&lt;td aling='right' width='2%' class='ico'&gt;&lt;img src='/bancolombia/images/warning.gif' width='16' height='15' /&gt;&lt;/td&gt;"+"&lt;td width='98%' valign='top' aling='center' class='err_validation'&gt;&lt;b&gt;Por favor corrija los campos con error marcados en color rojo. Para mayor informaci&amp;oacute;n respecto a la raz&amp;oacute;n del error, haga clic sobre cada &amp;iacute;cono de alerta.&lt;/b&gt;&lt;/td&gt;"+"&lt;/tr&gt;");
+				habilitarBotones("forma");
+			}).validate({
+				rules: {
+					errorContainer: $("#summary"),
+					fileType: {
+						required: true
+					},
+					modelInfo: {
+						required: true
+					},
+					loteId: {
+						required: true,
+						validLoteId: true,
+						maxlength: 25
+					},
+					sourceAccount: {
+						required: true
+					},
+					tipoaplicacion: {
+						required: true
+					},
+					date: {
+						required: true,
+						isValidDate: true
+					}
+				},
+				messages: {
+					fileType: {
+						required: "&lt;a href='#' onMouseOver=\"getMouseXY( event ); showHelp('error_popup', 'Tipo de pago','Seleccione el tipo de pago', 175 );\" onMouseOut=\"hideHelp('error_popup')\" onclick=\"return false;\" &gt;&lt;img src='/bancolombia/images//warning.gif' align=\"absmiddle\" class=\"ico_err\"  &gt;&lt;/a&gt;"
+					},
+					modelInfo: {
+						required: "&lt;a href='#' onMouseOver=\"getMouseXY( event ); showHelp('error_popup', 'Modelo','Seleccione el modelo', 175 );\" onMouseOut=\"hideHelp('error_popup')\" onclick=\"return false;\" &gt;&lt;img src='/bancolombia/images//warning.gif' align=\"absmiddle\" class=\"ico_err\"  &gt;&lt;/a&gt;"
+					},
+					loteId: {
+						&lt;!-- DEVBOLEBC-967 Mensajes de Validación para el campo Nombre del pago cuando está el campo vacío --&gt;
+						required: "&lt;a href='#' onMouseOver=\"getMouseXY( event ); showHelp('error_popup', 'Nombre del pago','Ingrese Nombre del pago.', 175 );\" onMouseOut=\"hideHelp('error_popup')\" onclick=\"return false;\" &gt;&lt;img src='/bancolombia/images//warning.gif' align=\"absmiddle\" class=\"ico_err\"  &gt;&lt;/a&gt;" ,
+						validLoteId: "&lt;a href='#' onMouseOver=\"getMouseXY( event ); showHelp('error_popup', 'Nombre del pago','Se permiten solo caracteres alfanum&amp;eacute;ricos y los caracteres: _ -', 175 );\" onMouseOut=\"hideHelp('error_popup')\" onclick=\"return false;\" &gt;&lt;img src='/bancolombia/images//warning.gif' align=\"absmiddle\" class=\"ico_err\"  &gt;&lt;/a&gt;",
+						maxlength: "&lt;a href='#' onMouseOver=\"getMouseXY( event ); showHelp('error_popup', 'Nombre del pago','El campo debe tener entre 1 y 25 caracteres.', 175 );\" onMouseOut=\"hideHelp('error_popup')\" onclick=\"return false;\" &gt;&lt;img src='/bancolombia/images//warning.gif' align=\"absmiddle\" class=\"ico_err\"  &gt;&lt;/a&gt;"
+					},
+					sourceAccount: {
+						required: "&lt;a href='#' onMouseOver=\"getMouseXY( event ); showHelp('error_popup', 'Cuenta a debitar','Ingrese cuenta a debitar.', 175 );\" onMouseOut=\"hideHelp('error_popup')\" onclick=\"return false;\" &gt;&lt;img src='/bancolombia/images//warning.gif' align=\"absmiddle\" class=\"ico_err\"  &gt;&lt;/a&gt;"
+					},
+					tipoaplicacion: {
+						required: "&lt;a href='#' onMouseOver=\"getMouseXY( event ); showHelp('error_popup', 'Tipo de aplicaci&amp;oacute;n','Ingrese el tipo de aplicacion.', 175 );\" onMouseOut=\"hideHelp('error_popup')\" onclick=\"return false;\" &gt;&lt;img src='/bancolombia/images//warning.gif' align=\"absmiddle\" class=\"ico_err\"  &gt;&lt;/a&gt;"
+					},
+					date: {
+						&lt;!-- DEVBOLEBC-973 - V5.12.7 PRJ-001961 -Look &amp; Feel de la aplicación --&gt;
+						required: "&lt;a href='#' onMouseOver=\"getMouseXY( event ); showHelp('error_popup', 'Fecha de aplicaci&amp;oacute;n','Ingrese Fecha de aplicaci&amp;oacute;n.', 175 );\" onMouseOut=\"hideHelp('error_popup')\" onclick=\"return false;\" &gt;&lt;img src='/bancolombia/images//warning.gif' align=\"absmiddle\" class=\"ico_err\"  &gt;&lt;/a&gt;" ,
+						isValidDate: "&lt;a href='#' onMouseOver=\"getMouseXY( event ); showHelp('error_popup', 'Fecha de aplicaci&amp;oacute;n','Por favor digite una fecha con el formato dd/mm/aaaa mayor o igual a la fecha actual', 175 );\" onMouseOut=\"hideHelp('error_popup')\" onclick=\"return false;\" &gt;&lt;img src='/bancolombia/images//warning.gif' align=\"absmiddle\" class=\"ico_err\"  &gt;&lt;/a&gt;"
+					}
+				}
+
+			});
+
+		$.validator.addMethod("isValidDate", function(value,element,param){
+			if(isDateDDMMYYYY(element) &amp;&amp; validarFechaMayorOIgualActual(element.value,null) )
+				return true;
+			return false;
+		});
+		$.validator.addMethod("validLoteId", function(value,element,param){
+			return isAlfanumeric(value);
+		});
+	}); // Fin - PRJ-001961
+
+	var newWind=null;
+
+	//PRJ-001961
+	function showErrorField (attrId, error, msgError) {
+		if (error != "") {
+			$("#"+attrId).attr("class","error");
+			$("#l"+attrId).attr("style","color: #ff0000; FONT-SIZE: 7pt; BACKGROUND-COLOR: #eeeeee; BORDER-RIGHT: black 1px solid");
+			$("#error"+attrId).html(msgError);
+			$("#summary").html("&lt;tr&gt;&lt;td aling='right' width='2%' class='ico'&gt;&lt;img src='/bancolombia/images/warning.gif' width='16' height='15' /&gt;&lt;/td&gt;"+
+					"&lt;td width='98%' valign='top' aling='center' class='err_validation'&gt;&lt;b&gt;Por favor corrija los campos con error marcados en color rojo. Para mayor informaci&amp;oacute;n respecto a la raz&amp;oacute;n del error, haga clic sobre cada &amp;iacute;cono de alerta.&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;");
+		}
+	}
+	//PRJ-001961
+	function hiddenErrorField (attrId) {
+		$("#"+attrId).attr("class","field");
+		$("#l"+attrId).attr("style","FONT-SIZE: 7pt; BACKGROUND-COLOR: #eeeeee; BORDER-RIGHT: black 1px solid;");
+		$("#error"+attrId).html("");
+		$("#summary").html("");
+	}
+	//PRJ-001961 -- Muestra si existen errores desde el backend
+	function backendErrors() {
+		showErrorField("loteId",'',"&lt;a href='#' onMouseOver=\"getMouseXY( event ); showHelp('error_popup', 'Nombre del pago','Existe otro Lote con ese mismo nombre', 175 );\" onMouseOut=\"hideHelp('error_popup')\" onclick=\"return false;\" &gt;&lt;img src='/bancolombia/images//warning.gif' align=\"absmiddle\" class=\"ico_err\"  &gt;&lt;/a&gt;");
+		showErrorField("loteId",'',"&lt;a href='#' onMouseOver=\"getMouseXY( event ); showHelp('error_popup', 'Nombre del pago','Se permiten solo caracteres alfanum&amp;eacute;ricos y los caracteres: _ -', 175 );\" onMouseOut=\"hideHelp('error_popup')\" onclick=\"return false;\" &gt;&lt;img src='/bancolombia/images//warning.gif' align=\"absmiddle\" class=\"ico_err\"  &gt;&lt;/a&gt;");
+	}
+	//Funcion que permite saber si los caracteres ingresados son alfanuméricos  
+	function isAlfanumeric(str) { 
+	    if (typeof(str)=='undefined')  {
+	        return false;
+	    }
+	    //PRJ-001961
+	    var expr = /^[a-z0-9A-ZáéeíóúÁÉÍÓÚñü_\-Ñ]*$/; //Solo valores a-z0-9A-ZáéíóúÁÉÍÓÚñü_\-Ñ
+	    if (!expr.test(str))
+	        return false;
+	    return true;
+	}
+
+	function clickContinuar() {
+		deshabilitarBotones("forma");
+		hiddenErrorField("loteId"); //PRJ-001961 -- Se ocultan los errores de backend
+		$("#forma").submit();
+	}
+
+	function clickFileType(forma, fileTypeForm) {
+	   copyData(forma, fileTypeForm);
+		if (forma.fileType.value != "") {
+		  fileTypeForm.submit();
+		}
+	}
+
+	// Quita los espacios iniciales y finales de un string y devuelve el string modificado.
+	function trimSpaces(modelName) {
+		var i = 0;
+		while (i &lt; modelName.length &amp;&amp; modelName.charAt(i) == " ") {
+			i++;
+		}
+
+		if(i &lt; modelName.length) {
+			modelName = modelName.substring(i, modelName.length);
+		}
+
+		i = modelName.length - 1;
+		while (i &gt; 0 &amp;&amp; modelName.charAt(i) == " ") {
+			i--;
+		}
+
+		if(i &gt; 0) {
+			modelName = modelName.substring(0, i+1);
+		}
+		return modelName;
+	}
+
+
+	function updateModelInfo(forma) {
+		modelInfoArray  = forma.modelInfo.value.split("#X#");
+		
+		selectedModel = forma.modelInfo.selectedIndex;
+		if (selectedModel == 1) {
+			forma.loteId.value = '';
+			forma.sourceAccount.selectedIndex = 0;
+		}
+
+		if (parseInt(modelInfoArray[0]) &gt; 0) {
+		  &lt;!--  24 Sept. 2005. QA 3332. Se agrega codigo para manejar el caso en que --&gt;
+		  &lt;!-- no hay informacion de la cuenta origen --&gt;
+		  if (modelInfoArray[1] == "") {
+			  forma.sourceAccount.options[0].selected = true;
+		  }
+		  else {
+			  forma.sourceAccount.value = modelInfoArray[1];
+		  }
+
+		  forma.loteId.value = trimSpaces(modelInfoArray[2]);
+		}
+	}
+
+	function copyData(forma, targetForma) {
+		targetForma.fileType.value      = forma.fileType.value;
+		targetForma.loteId.value        = forma.loteId.value;
+		targetForma.sourceAccount.value = forma.sourceAccount.value;
+		targetForma.date.value          = forma.date.value;
+		
+		targetForma.tipoaplicacion.value = forma.tipoaplicacion.value;
+	}
+
+	// Parte implementada para popup
+	var browser="";
+	if(navigator.appName=="Netscape" &amp;&amp; parseInt(navigator.appVersion)==2) { browser="n2"; }
+	if(navigator.appName=="Netscape" &amp;&amp; parseInt(navigator.appVersion)==3) { browser="n3"; }
+	if(navigator.appName=="Netscape" &amp;&amp; parseInt(navigator.appVersion)==4) { browser="n4"; }
+	if(navigator.appVersion.indexOf("MSIE 3.0") != -1) { browser="ie3"; }
+	if(navigator.appVersion.indexOf("MSIE 4.0") != -1) { browser="ie4"; }
+
+  	// Used to position window for Netscape 4
+	var w=0;
+	var h=0;
+	if ( browser=="n4" ) {
+		var screen_height=parent.screen.height;
+		var screen_width=parent.screen.width;
+		var main_height=parent.window.innerHeight;
+		h=(screen_height-main_height);
+		w=(screen_width/2)-275;
+	}
+
+  	function openWindow() {
+		var forma = document.forma;
+		$("#summary").html("");
+		$("#forma").validate().resetForm();
+	 	$("#forma").validate().element( "#sourceAccount" );
+
+	    if(forma.sourceAccount.value!="") {
+		// if(checkEmpty(forma.sourceAccount,'cuenta a debitar')) {
+			  var addr = "BatchPaymentsCreate.balance?";
+			  var pi = "processInstanceId=631834469B3708EB46C0A8A8E250494E";
+			  var ai = "&amp;activityInstanceId=6318346F71574D95F1C0A8A8E241494E";
+			  var as = "&amp;sourceAccount=" + forma.sourceAccount.value;
+			  var allparam = addr + pi + ai + as;
+			  newWind = window.open(allparam,"display","width=600,height=450,screenX="+w+",screenY="+h);
+			  if (newWind.opener == null)
+				{newWind.opener = window;}
+			  else {
+				if ( browser=="n3"  ||  browser=="n4"  ||  browser=="ie4" )
+				  newWind.focus();
+			  }
+			  return newWind;
+		}
+  	}
+
+  	function closeNewWindow() {
+		if (newWind != null) {
+			newWind.close();
+		}
+  	}
+
+</script>
+<meta http-equiv="Content-Type" content="text/html;" />
+<!-- Se insertan las librerías de los tag libs-->
+
+
+<script type="text/javascript" src="/js/menu/milonic_src.js"></script>
+<script type="text/javascript">
+  if(ns4)
+  	_d.write("&lt;scr"+"ipt type=text/javascript src=/js/menu/mmenuns4.js&gt;&lt;\/scr"+"ipt&gt;");
+  else 
+  	_d.write("&lt;scr"+"ipt type=text/javascript src=/js/menu/mmenudom.js&gt;&lt;\/scr"+"ipt&gt;");
+</script><script type="text/javascript" src="/js/menu/mmenudom.js"></script>
+
+
+
+<!-- Se insertan las librerías de los tag libs-->
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="/bancolombia/menu/menuDataBodyStruts.js?version=_V6.7.0.RC47"></script>
+
+<script language="JavaScript">
+
+var menuData = 'ADSU';
+var newText = false;
+var newTextRD= false;
+var newTextCM= false;
+
+function faq() {
+	openURL ('https://www.todo1.com/cs/Satellite?c=Page&amp;cid=1259763466763&amp;pagename=Ayudas%2FPage%2FAyudasBasicasBancolombia');
+}
+
+function security() {
+	openURL ('https://www.todo1.com/cs/Satellite?c=Page&amp;cid=1259763466695&amp;pagename=Ayudas%2FPage%2FAyudasBasicasBancolombia');
+}
+
+function privacy() {
+	openURL ('https://www.todo1.com/cs/Satellite?c=Page&amp;cid=1259763466719&amp;pagename=Ayudas%2FPage%2FAyudasBasicasBancolombia');
+}
+
+function online() {
+	openURL ('https://asistencia.webv2.allus.com.co/WebAPI802/ChatBancolombiaEmpresas/AdvancedChat/HtmlChatFrameSet.jsp');
+}
+
+usersType(menuData, 'ADSU', 'ADAP', 'ADPR','OP' ) ;
+
+with(milonic = new menuname("consulta")){
+	sbmQuery(milonic,
+			['1','1',
+			 '1','1',
+			 '1','1',
+			 '1','1',
+			 '1'], 
+			 'processInstanceId=631834469B3708EB46C0A8A8E250494E&amp;activityInstanceId=6318346F71574D95F1C0A8A8E241494E');
+}
+with(milonic = new menuname("saldo_ahorro")){
+	sbmBalanceSavings(milonic, '1','processInstanceId=631834469B3708EB46C0A8A8E250494E&amp;activityInstanceId=6318346F71574D95F1C0A8A8E241494E');
+}
+with(milonic=new menuname("saldo_corriente")){
+	sbmBalanceChecking(milonic, '1','processInstanceId=631834469B3708EB46C0A8A8E250494E&amp;activityInstanceId=6318346F71574D95F1C0A8A8E241494E', '/SVE/control/');
+}
+with(milonic=new menuname("deposito")){
+	sbmDeposit(milonic,
+			['1','1',
+			 '1','1',
+ 			 '1'],'processInstanceId=631834469B3708EB46C0A8A8E250494E&amp;activityInstanceId=6318346F71574D95F1C0A8A8E241494E', '/SVE/control/');
+}
+with(milonic=new menuname("inversion")){
+	sbmInvestment(milonic, 
+			['1','1',
+ 			 '1'
+ 			 ],'processInstanceId=631834469B3708EB46C0A8A8E250494E&amp;activityInstanceId=6318346F71574D95F1C0A8A8E241494E', '/SVE/control/');
+}
+//5.18.0 Servicios Trade
+with(milonic=new menuname("serviceTrade")){
+	sbmTradeservice (milonic,
+			['1','1',
+			'1','1',
+			'1'],
+			 'processInstanceId=631834469B3708EB46C0A8A8E250494E&amp;activityInstanceId=6318346F71574D95F1C0A8A8E241494E', '/SVE/control/');
+}
+
+with(milonic=new menuname("comercioInternacional")){
+	sbmComercioInternacional (milonic,
+			['1','1',
+			'1'],
+			 'processInstanceId=631834469B3708EB46C0A8A8E250494E&amp;activityInstanceId=6318346F71574D95F1C0A8A8E241494E', newTextRD);
+}
+//5.18.0 Servicios Trade
+with(milonic=new menuname("solfinantrade")){
+	sbmSolfinantrade (milonic, '1','processInstanceId=631834469B3708EB46C0A8A8E250494E&amp;activityInstanceId=6318346F71574D95F1C0A8A8E241494E', '/SVE/control/');
+}
+with(milonic=new menuname("credimporttrade")){
+	sbmCredimporttrade (milonic,
+			['1','1',
+			 '1'],'processInstanceId=631834469B3708EB46C0A8A8E250494E&amp;activityInstanceId=6318346F71574D95F1C0A8A8E241494E', '/SVE/control/');
+}
+with(milonic=new menuname("credexporttrade")){
+	sbmCredexporttrade (milonic,
+			'1','processInstanceId=631834469B3708EB46C0A8A8E250494E&amp;activityInstanceId=6318346F71574D95F1C0A8A8E241494E', '/SVE/control/');
+}
+with(milonic=new menuname("credstandbytrade")){
+	sbmCredstandbytrade (milonic,
+			['1','1'], 
+			 'processInstanceId=631834469B3708EB46C0A8A8E250494E&amp;activityInstanceId=6318346F71574D95F1C0A8A8E241494E', '/SVE/control/');
+}
+with(milonic=new menuname("credit")){
+	sbmCredit (milonic,
+			['1','1'], 
+			 'processInstanceId=631834469B3708EB46C0A8A8E250494E&amp;activityInstanceId=6318346F71574D95F1C0A8A8E241494E', '/SVE/control/');
+}
+with(milonic=new menuname("credipago")){
+	sbmCreditPaid (milonic,
+			['1','1'], 
+			'processInstanceId=631834469B3708EB46C0A8A8E250494E&amp;activityInstanceId=6318346F71574D95F1C0A8A8E241494E', '/SVE/control/');
+}
+with(milonic=new menuname("tarjeta")){
+	sbmCard (milonic,
+			['1','1',
+			 '1','1',
+			 '1'],'processInstanceId=631834469B3708EB46C0A8A8E250494E&amp;activityInstanceId=6318346F71574D95F1C0A8A8E241494E', '/SVE/control/');
+}
+with(milonic=new menuname("credito")){
+	sbmCredit1 (milonic,
+			'0','processInstanceId=631834469B3708EB46C0A8A8E250494E&amp;activityInstanceId=6318346F71574D95F1C0A8A8E241494E', '/SVE/control/');
+}
+with(milonic=new menuname("tran_lote")){
+	sbmBatchTransfer (milonic, 
+			['1','1'],
+			 'processInstanceId=631834469B3708EB46C0A8A8E250494E&amp;activityInstanceId=6318346F71574D95F1C0A8A8E241494E', '/SVE/control/');
+}
+with(milonic=new menuname("transf")){
+	sbmTransfer (milonic,
+			 ['1','1',
+ 			  '1'],'processInstanceId=631834469B3708EB46C0A8A8E250494E&amp;activityInstanceId=6318346F71574D95F1C0A8A8E241494E', '/SVE/control/');
+}
+with(milonic=new menuname("nomina")){
+	var batchPayrollFile = 'true';
+	var batchPayrollManual = 'true';
+	var batchPayrollEncrypted = 'true';
+	sbmPayroll (milonic,
+			 ['1','1',
+ 			  '1'],'processInstanceId=631834469B3708EB46C0A8A8E250494E&amp;activityInstanceId=6318346F71574D95F1C0A8A8E241494E', '/SVE/control/', 
+			  batchPayrollFile, batchPayrollManual, batchPayrollEncrypted);
+}
+with(milonic=new menuname("proveedores")){
+	var batchProvidersFile = 'true';
+	var batchProvidersManual = 'true';
+	var batchProvidersEncrypted = 'true';
+	sbmProviders (milonic, 
+			['1','1',     
+			 '1'],'processInstanceId=631834469B3708EB46C0A8A8E250494E&amp;activityInstanceId=6318346F71574D95F1C0A8A8E241494E', '/SVE/control/', 
+			 batchProvidersFile, batchProvidersManual, batchProvidersEncrypted);
+}
+with(milonic=new menuname("terceros")){
+	sbmThird (milonic,
+			'1','processInstanceId=631834469B3708EB46C0A8A8E250494E&amp;activityInstanceId=6318346F71574D95F1C0A8A8E241494E', '/SVE/control/');
+}
+with(milonic=new menuname("transferencia")){
+	sbmTransfer1 (milonic,
+			'1','processInstanceId=631834469B3708EB46C0A8A8E250494E&amp;activityInstanceId=6318346F71574D95F1C0A8A8E241494E', '/SVE/control/');
+}
+with(milonic=new menuname("recaudo")){
+	sbmCollection (milonic,
+			['1','1',
+			 '1','1'], 
+			 'processInstanceId=631834469B3708EB46C0A8A8E250494E&amp;activityInstanceId=6318346F71574D95F1C0A8A8E241494E', '/SVE/control/');
+}
+with(milonic=new menuname("formato_descarga")){
+	sbmDownloadFormat (milonic, 'processInstanceId=631834469B3708EB46C0A8A8E250494E&amp;activityInstanceId=6318346F71574D95F1C0A8A8E241494E', '/SVE/control/');
+}
+with(milonic=new menuname("otra")){
+	sbmOther (milonic,
+			['1','1',
+			 '1','1',
+			 '1','1',
+			 '1'],'processInstanceId=631834469B3708EB46C0A8A8E250494E&amp;activityInstanceId=6318346F71574D95F1C0A8A8E241494E', '/SVE/control/');
+}
+with(milonic=new menuname("estado")){
+	sbmStatus (milonic, 'processInstanceId=631834469B3708EB46C0A8A8E250494E&amp;activityInstanceId=6318346F71574D95F1C0A8A8E241494E', '/SVE/control/');
+}
+with(milonic=new menuname("usuarios")){
+	sbmUsers (milonic, 
+			['1','ADSU',
+			 '1'],'processInstanceId=631834469B3708EB46C0A8A8E250494E&amp;activityInstanceId=6318346F71574D95F1C0A8A8E241494E', '/SVE/control/', 'ADPR');
+}
+with(milonic=new menuname("perfiles")){
+	sbmProfiles (milonic,
+			['ADSU','1',
+			 '1','1'],
+			 'processInstanceId=631834469B3708EB46C0A8A8E250494E&amp;activityInstanceId=6318346F71574D95F1C0A8A8E241494E', '/SVE/control/', 'ADPR', 'ADAP');
+}
+with(milonic=new menuname("certificados")){
+	sbmCertificates (milonic,
+			['0','ADSU'],
+			 'processInstanceId=631834469B3708EB46C0A8A8E250494E&amp;activityInstanceId=6318346F71574D95F1C0A8A8E241494E', 'ADAP');
+}
+
+	with(milonic=new menuname("token")){
+		sbmToken (milonic,
+				['ADSU','1',
+				 '1','1'],
+				 'processInstanceId=631834469B3708EB46C0A8A8E250494E&amp;activityInstanceId=6318346F71574D95F1C0A8A8E241494E', 'ADPR', 'ADAP');
+	}
+
+with(milonic=new menuname("ctas_propias")){
+	sbmOwnAccounts (milonic,
+			['1','1',
+			 '1'],'processInstanceId=631834469B3708EB46C0A8A8E250494E&amp;activityInstanceId=6318346F71574D95F1C0A8A8E241494E', '/SVE/control/');
+}
+with(milonic=new menuname("ctas_tercero")){
+	sbmThirdAccounts (milonic,
+			['ADSU','1',
+			 '1','1',
+			 '1','1',
+			 '1'],'processInstanceId=631834469B3708EB46C0A8A8E250494E&amp;activityInstanceId=6318346F71574D95F1C0A8A8E241494E', '/SVE/control/', 'ADPR', 'ADAP');
+}
+with(milonic=new menuname("reglas_seguridad")){
+	sbmSecurityRules (milonic,
+			['ADSU','1',
+			 '1'],'processInstanceId=631834469B3708EB46C0A8A8E250494E&amp;activityInstanceId=6318346F71574D95F1C0A8A8E241494E', '/SVE/control/', 'ADPR', 'ADAP');
+}
+with(milonic=new menuname("adm_archivos_encriptados")){
+	sbmAdmEncryptedFiles (milonic, 'processInstanceId=631834469B3708EB46C0A8A8E250494E&amp;activityInstanceId=6318346F71574D95F1C0A8A8E241494E', '/SVE/control/');
+}
+with(milonic=new menuname("modulo")){
+	sbmModule (milonic,
+			['1','1',
+			 'ADSU'],'processInstanceId=631834469B3708EB46C0A8A8E250494E&amp;activityInstanceId=6318346F71574D95F1C0A8A8E241494E', '/SVE/control/', 'ADPR');
+}
+
+with(milonic=new menuname("servicio")){
+	sbmService (milonic,
+			['1','1'], 
+			 'processInstanceId=631834469B3708EB46C0A8A8E250494E&amp;activityInstanceId=6318346F71574D95F1C0A8A8E241494E', '/SVE/control/');
+}
+with(milonic=new menuname("informacion")){
+	sbmInformation (milonic, 'processInstanceId=631834469B3708EB46C0A8A8E250494E&amp;activityInstanceId=6318346F71574D95F1C0A8A8E241494E', '/SVE/control/');
+}
+
+drawMenus();
+
+</script><div class="mmenucontainer" onmouseout="$I()" onmouseover="$jJ(0)" onselectstart="return 0" id="menu0" style="padding:0px;background:#00007B;z-index:999;visibility:hidden;position:absolute;top:-999px;;"></div><div class="mmenucontainer" onmouseout="$I()" onmouseover="$jJ(1)" onselectstart="return 0" id="menu1" style="padding:0px;background:#00007B;z-index:999;visibility:hidden;position:absolute;top:-999px;;"></div><div class="mmenucontainer" onmouseout="$I()" onmouseover="$jJ(2)" onselectstart="return 0" id="menu2" style="padding:0px;background:#00007B;z-index:999;visibility:hidden;position:absolute;top:-999px;;"></div><div class="mmenucontainer" onmouseout="$I()" onmouseover="$jJ(3)" onselectstart="return 0" id="menu3" style="padding:0px;background:#00007B;z-index:999;visibility:hidden;position:absolute;top:-999px;;"></div><div class="mmenucontainer" onmouseout="$I()" onmouseover="$jJ(4)" onselectstart="return 0" id="menu4" style="padding:0px;background:#00007B;z-index:999;visibility:hidden;position:absolute;top:-999px;;"></div><div class="mmenucontainer" onmouseout="$I()" onmouseover="$jJ(5)" onselectstart="return 0" id="menu5" style="padding:0px;background:#00007B;z-index:999;visibility:hidden;position:absolute;top:-999px;;"></div><div class="mmenucontainer" onmouseout="$I()" onmouseover="$jJ(6)" onselectstart="return 0" id="menu6" style="padding:0px;background:#00007B;z-index:999;visibility:hidden;position:absolute;top:-999px;;"></div><div class="mmenucontainer" onmouseout="$I()" onmouseover="$jJ(7)" onselectstart="return 0" id="menu7" style="padding:0px;background:#00007B;z-index:999;visibility:hidden;position:absolute;top:-999px;;"></div><div class="mmenucontainer" onmouseout="$I()" onmouseover="$jJ(8)" onselectstart="return 0" id="menu8" style="padding:0px;background:#00007B;z-index:999;visibility:hidden;position:absolute;top:-999px;;"></div><div class="mmenucontainer" onmouseout="$I()" onmouseover="$jJ(9)" onselectstart="return 0" id="menu9" style="padding:0px;background:#00007B;z-index:999;visibility:hidden;position:absolute;top:-999px;;"></div><div class="mmenucontainer" onmouseout="$I()" onmouseover="$jJ(10)" onselectstart="return 0" id="menu10" style="padding:0px;background:#00007B;z-index:999;visibility:hidden;position:absolute;top:-999px;;"></div><div class="mmenucontainer" onmouseout="$I()" onmouseover="$jJ(11)" onselectstart="return 0" id="menu11" style="padding:0px;background:#00007B;z-index:999;visibility:hidden;position:absolute;top:-999px;;"></div><div class="mmenucontainer" onmouseout="$I()" onmouseover="$jJ(12)" onselectstart="return 0" id="menu12" style="padding:0px;background:#00007B;z-index:999;visibility:hidden;position:absolute;top:-999px;;"></div><div class="mmenucontainer" onmouseout="$I()" onmouseover="$jJ(13)" onselectstart="return 0" id="menu13" style="padding:0px;background:#00007B;z-index:999;visibility:hidden;position:absolute;top:-999px;;"></div><div class="mmenucontainer" onmouseout="$I()" onmouseover="$jJ(14)" onselectstart="return 0" id="menu14" style="padding:0px;background:#00007B;z-index:999;visibility:hidden;position:absolute;top:-999px;;"></div><div class="mmenucontainer" onmouseout="$I()" onmouseover="$jJ(15)" onselectstart="return 0" id="menu15" style="padding:0px;background:#00007B;z-index:999;visibility:hidden;position:absolute;top:-999px;;"></div><div class="mmenucontainer" onmouseout="$I()" onmouseover="$jJ(16)" onselectstart="return 0" id="menu16" style="padding:0px;background:#00007B;z-index:999;visibility:hidden;position:absolute;top:-999px;;"></div><div class="mmenucontainer" onmouseout="$I()" onmouseover="$jJ(17)" onselectstart="return 0" id="menu17" style="padding:0px;background:#00007B;z-index:999;visibility:hidden;position:absolute;top:-999px;;"></div><div class="mmenucontainer" onmouseout="$I()" onmouseover="$jJ(18)" onselectstart="return 0" id="menu18" style="padding:0px;background:#00007B;z-index:999;visibility:hidden;position:absolute;top:-999px;;"></div><div class="mmenucontainer" onmouseout="$I()" onmouseover="$jJ(19)" onselectstart="return 0" id="menu19" style="padding:0px;background:#00007B;z-index:999;visibility:hidden;position:absolute;top:-999px;;"></div><div class="mmenucontainer" onmouseout="$I()" onmouseover="$jJ(20)" onselectstart="return 0" id="menu20" style="padding:0px;background:#00007B;z-index:999;visibility:hidden;position:absolute;top:-999px;;"></div><div class="mmenucontainer" onmouseout="$I()" onmouseover="$jJ(21)" onselectstart="return 0" id="menu21" style="padding:0px;background:#00007B;z-index:999;visibility:hidden;position:absolute;top:-999px;;"></div><div class="mmenucontainer" onmouseout="$I()" onmouseover="$jJ(22)" onselectstart="return 0" id="menu22" style="padding:0px;background:#00007B;z-index:999;visibility:hidden;position:absolute;top:-999px;;"></div><div class="mmenucontainer" onmouseout="$I()" onmouseover="$jJ(23)" onselectstart="return 0" id="menu23" style="padding:0px;background:#00007B;z-index:999;visibility:hidden;position:absolute;top:-999px;;"></div><div class="mmenucontainer" onmouseout="$I()" onmouseover="$jJ(24)" onselectstart="return 0" id="menu24" style="padding:0px;background:#00007B;z-index:999;visibility:hidden;position:absolute;top:-999px;;"></div><div class="mmenucontainer" onmouseout="$I()" onmouseover="$jJ(25)" onselectstart="return 0" id="menu25" style="padding:0px;background:#00007B;z-index:999;visibility:hidden;position:absolute;top:-999px;;"></div><div class="mmenucontainer" onmouseout="$I()" onmouseover="$jJ(26)" onselectstart="return 0" id="menu26" style="padding:0px;background:#00007B;z-index:999;visibility:hidden;position:absolute;top:-999px;;"></div><div class="mmenucontainer" onmouseout="$I()" onmouseover="$jJ(28)" onselectstart="return 0" id="menu28" style="padding:0px;background:#00007B;z-index:999;visibility:hidden;position:absolute;top:-999px;;"></div><div class="mmenucontainer" onmouseout="$I()" onmouseover="$jJ(29)" onselectstart="return 0" id="menu29" style="padding:0px;background:#00007B;z-index:999;visibility:hidden;position:absolute;top:-999px;;"></div><div class="mmenucontainer" onmouseout="$I()" onmouseover="$jJ(30)" onselectstart="return 0" id="menu30" style="padding:0px;background:#00007B;z-index:999;visibility:hidden;position:absolute;top:-999px;;"></div><div class="mmenucontainer" onmouseout="$I()" onmouseover="$jJ(31)" onselectstart="return 0" id="menu31" style="padding:0px;background:#00007B;z-index:999;visibility:hidden;position:absolute;top:-999px;;"></div><div class="mmenucontainer" onmouseout="$I()" onmouseover="$jJ(32)" onselectstart="return 0" id="menu32" style="padding:0px;background:#00007B;z-index:999;visibility:hidden;position:absolute;top:-999px;;"></div><div class="mmenucontainer" onmouseout="$I()" onmouseover="$jJ(33)" onselectstart="return 0" id="menu33" style="padding:0px;background:#00007B;z-index:999;visibility:hidden;position:absolute;top:-999px;;"></div><div class="mmenucontainer" onmouseout="$I()" onmouseover="$jJ(34)" onselectstart="return 0" id="menu34" style="padding:0px;background:#00007B;z-index:999;visibility:hidden;position:absolute;top:-999px;;"></div><div class="mmenucontainer" onmouseout="$I()" onmouseover="$jJ(35)" onselectstart="return 0" id="menu35" style="padding:0px;background:#00007B;z-index:999;visibility:hidden;position:absolute;top:-999px;;"></div>
+
+<script language="JavaScript">
+
+if(parent.TransactionFrame!= undefined &amp;&amp; parent.TransactionFrame.load_menu_body != undefined) {
+	parent.TransactionFrame.load_menu_body = true;
+}
+
+function fwLoadMenus() {
+	if(parent.TransactionFrame!= undefined &amp;&amp; parent.TransactionFrame.load_menu_body != undefined) {
+		parent.TransactionFrame.load_menu_body = true;
+	}
+} // fwLoadMenus()
+
+function MM_preloadImages() { //v3.0
+}
+
+function MM_findObj(n, d) { //v4.0
+}
+function getMouseX(){
+}
+function MM_goToURL(ie,d) { //v3.0
+	location.href = d;
+}
+function MM_swapImage() { //v3.0
+}
+</script>
+<script language="JavaScript1.2" src="/js/fw_menu.js"></script>
+<script language="JavaScript1.2" src="/js/validar.js"></script>
+<script language="JavaScript1.2" src="/js/date.js"></script>
+
+<link rel="stylesheet" href="/bancolombia/styles.css" type="text/css" />
+<link rel="stylesheet" href="/bancolombia/calendarStyles.css" type="text/css" />
+
+
+
+<script language="JavaScript1.2">fwLoadMenus();</script>
+
+<table width="98%" border="0" cellspacing="0" cellpadding="0">
+	<tbody><tr valign="top">
+		<td width="1%" height="20"> </td>
+		<td width="99%" height="20">
+			
+
+
+
+
+
+
+<script>
+var warning = 300;
+var timeout = 420;
+var warn2 = 400;
+var timewarn = 60;
+var warnmsg1 = 'ALWarnmsg1';
+var warnmsg2 = 'ALWarnmsg2';
+var current = 0;
+
+getSecs();
+
+function resetTimeout() {
+	current = -50;
+	try {
+	    if(this.formId=="cancelForm")
+			{
+			
+			var xmlDoc;
+				if (window.ActiveXObject) 
+				{   xmlDoc=new ActiveXObject("microsoft.xmldom");
+					xmlDoc.async = false ;
+					xmlDoc.load("/SVE/closeSession.jsp");
+					top.location.href='BoleTransactional.bancolombia';
+				}
+
+	
+				else
+				if(window.XMLHttpRequest) 
+				{ 
+					var xmlhttp = new XMLHttpRequest();
+					xmlhttp.open("GET","/SVE/closeSession.jsp",false);
+					xmlhttp.send(null);
+					xmlDoc=xmlhttp.responseXML;
+					top.location.href='BoleTransactional.bancolombia';
+				}
+				
+			}
+		
+		} catch( err ) {
+	    console.log( err);
+	  } 
+}
+
+window.onbeforeunload = resetTimeout;
+
+function popUpTimeOut(sURL, sMSG, sTIM) {
+	var popW = 450;
+	var popH = 200;
+	var winleft = (screen.width - popW) / 2;
+	var winUp = (screen.height - popH) / 2;
+	window.open(unescape(sURL)+'?msg='+sMSG+'&amp;tim='+sTIM, 'timeout', 'dependent=yes,titlebar=no,menubar=no,alwaysRaised=1,hotkeys=no,resizable=no,status=no,toolbar=no,width='+popW+',height='+popH+',left='+winleft+',top='+winUp);
+}
+
+function getSecs() {
+	if(current&lt;0) return;
+
+    current = current + 1;
+
+    if (current == warning) { popUpTimeOut('/SVE/bancolombia/includes/timeoutWarning1.jsp',warnmsg1,timewarn); }
+
+    if (current == warn2) {
+        popUpTimeOut('/SVE/bancolombia/includes/timeoutWarning1.jsp',warnmsg2,timewarn);
+    }
+	if (current == timeout) {
+		popUpTimeOut('/SVE/bancolombia/includes/timeout.jsp','',(timeout/60));
+		top.location.href="/SVE/salida.jsp";
+	}
+    window.setTimeout('getSecs()',1000);
+}
+
+</script>
+
+<script language="javascript" src="/js/liveclock.js"></script>
+<script language="JavaScript1.2" src="/js/F5Bloqueado.js"></script>
+<script language="JavaScript">
+// - Se borra el history, para evitar que se use el boton Atras en todos los navegadores
+window.history.forward(1);				  
+window.onpageshow = function (evt) {
+if (evt.persisted) window.onload();
+}
+//ENH-000032 Fase 2: metodo para cambiar de proceso al dar clic en el sobre
+function submit_cicMC() {
+	form = document.getElementById('cic_message_center_form');
+	if (form != null)
+		document.cic_message_center_form.submit();
+}
+</script>
+
+<table width="100%" border="0" cellspacing="0" cellpadding="4">
+	<tbody><tr>
+ 		<td valign="top">Empresa:LÚIS ALBERTO NIÑO SOLER-QATODO1</td>
+	</tr>
+	<tr>
+	    <td valign="middle" colspan="2">NIT:7012400   
+	    </td>   
+	    <td valign="middle" align="right"> 
+			<table width="100%">
+				<tbody><tr>
+					<td width="50%"> </td>					
+					<td width="25%" valign="middle">
+						<b><script language="javascript">&lt;!--
+							
+								var thetime;
+								var a1;
+								var a2;
+								var a3; 
+								var a4;
+								var a5;
+								var a6;
+				                a1 =  2018;
+				                a2 =  3;
+				                a3 =  30;
+				                a4 =  15;
+				                a5 =  17;
+				                a6 =  59;
+		                		thetime=new Date( a1, a2, a3, a4, a5, a6);
+		 						new LiveClockWithDate('','1','','','','','231','','','','4','null',thetime);
+								//--&gt;</script><span id="LiveClock0" style="width:231px;background-color:white">ABRIL 30 de 2018 - <font color="black" face="Arial" size="1">3:18:02 PM</font></span> 
+							</b>
+						</td>
+					<td valign="middle" width="5%"><a href="#"><img src="/bancolombia/images/ayuda2.gif" width="16" height="16" onclick="window.open('https://www.todo1.com/cs/Satellite?c=Page&amp;cid=1259763466851&amp;pagename=Ayudas%2FPage%2FAyudasBasicasBancolombia','SucursalVirtualEmpresas','width=565,height=540,scrollbars=yes,resizable=yes')" border="0" alt="Ayuda" /></a></td>
+				</tr> 
+				<tr>
+					<td> </td>
+					<td valign="middle" colspan="2">
+					<b>Dirección IP: </b>201.221.124.56
+					</td>					
+				</tr>
+			</tbody></table>
+		</td>
+	</tr>
+	<tr> 
+	    <td valign="top" align="left">Sr(a) Super 7012400
+	    
+	    	</td><td align="left" colspan="4"><b>Su última entrada a la Sucursal Virtual Empresas fue el:</b> lunes, 30 de abril de 2018 - 1:46 PM</td>
+	    
+ 	</tr>
+</tbody></table>
+<form name="cic_message_center_form" id="cic_message_center_form" action="BoleTransactional.CM" method="post">
+	<input type="hidden" id="processname" name="processname" value="Cic" />
+	<input type="hidden" name="processInstanceId" value="631834469B3708EB46C0A8A8E250494E" />
+	<input type="hidden" name="activityInstanceId" value="6318346F71574D95F1C0A8A8E241494E" />
+	<input type="hidden" id="cic_mclogin" name="cic_mclogin" value="no" />
+</form>
+		</td>
+	</tr>
+	<tr>
+		<td width="1%" height="21"> </td>
+		<td width="99%" height="21"> </td>
+	</tr>
+	<tr>
+		<td width="1%" height="21"> </td>
+		<td width="99%" height="21">
+		<table cellspacing="0" cellpadding="0" background="/bancolombia/images/fondo_title.gif" border="0">
+			<tbody>
+				<tr>
+					<td valign="top" align="right" width="4" height="20"><img height="20" src="/bancolombia/images/bullet_title_left.gif" width="4" /></td>
+					<td class="tituloppal" valign="center" align="left">
+						 Información básica lote Nómina
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	    <p>Seleccione el tipo de pago que desea realizar e ingrese los datos que se solicitan a continuación y luego de clic en Continuar. </p><p></p>
+      </td>
+	</tr>
+	<tr>
+		<td width="1%" height="21"> </td>
+		<td width="99%">
+			<!--ShowRecoverableError-->
+                             <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+                                 <tbody id="summary">
+                                 <tr>
+                                                                      </tr>
+                                 </tbody>
+                             </table>
+<!--ShowRecoverableError-->
+
+
+		</td>
+	</tr>
+	<tr>
+		<td width="1%" height="88"> </td>
+		<td width="99%" valign="top" align="left" height="88">
+		<br />
+		<form autocomplete="off" id="forma" name="forma" method="post" action="BatchPaymentsCreate.continueNomina">
+			<input type="hidden" name="processInstanceId" value="631834469B3708EB46C0A8A8E250494E" />
+<input type="hidden" name="activityInstanceId" value="6318346F71574D95F1C0A8A8E241494E" />
+
+			<table border="0" cellspacing="0" cellpadding="2" align="center" class="bordegeneral">
+				<tbody><tr>
+					<td colspan="3" class="toptitle" height="15">
+					<div align="center">Pago Lote Nómina</div>
+					</td>
+				</tr>
+				<!-- lista tipos de lotes (archivos) -->
+				<tr>
+					<td class="label" id="lfileType" style="FONT-SIZE: 7pt; BACKGROUND-COLOR: #eeeeee; BORDER-RIGHT: black 1px solid;"><div align="left"><b>Tipo de pago:</b></div></td>
+					<td class="field">
+						<table align="left" border="0" cellspacing="0" cellpadding="0">
+							<tbody><tr>
+								<td class="mito">
+									<select name="fileType" id="fileType" onchange="clickFileType(forma, document.fileTypeForm);">
+										<option value="">Seleccione</option>
+										<option value="6">CREDIPAGO NOMINA</option><option value="2">FORMATO 2003 CREDIPAGO NOMINA </option><option value="1">FORMATO 2003 PAGO DE NOMINA</option><option value="3">FORMATO 2003 PAGO DE PENSIONES</option><option value="4">PAGO DE NOMINA</option><option value="5">PAGO DE PENSIONES</option>
+									</select>
+								</td>
+							</tr>
+						</tbody></table>
+					</td>
+				</tr>
+				<!-- Lista de modelos -->
+				<tr valign="middle">
+					<td class="label" id="lmodelInfo" style="FONT-SIZE: 7pt; BACKGROUND-COLOR: #eeeeee; BORDER-RIGHT: black 1px solid;"><div align="left"><b>Modelo:</b></div></td>
+					<td class="field">
+						<table align="left" border="0" cellspacing="0" cellpadding="0">
+							<tbody><tr>
+								<td class="mito">
+									<select name="modelInfo" id="modelInfo" onchange="updateModelInfo(forma);">
+										<option value="">Seleccione</option>
+										
+									</select>
+								</td>
+							</tr>
+						</tbody></table>
+					</td>
+				</tr>
+				<!-- identificacion del lote -->
+				<tr valign="middle">
+					<td class="label" id="lloteId" style="FONT-SIZE: 7pt; BACKGROUND-COLOR: #eeeeee; BORDER-RIGHT: black 1px solid;"><div align="left"><b>Nombre del pago: </b></div></td>
+					<td class="field">
+						<input type="text" name="loteId" id="loteId" value="" />
+						<span id="errorloteId"></span>
+					</td>
+				</tr>
+				<!-- Cuenta de origen -->
+				<tr valign="middle">
+					<td class="label" id="lsourceAccount" style="FONT-SIZE: 7pt; BACKGROUND-COLOR: #eeeeee; BORDER-RIGHT: black 1px solid;"><div align="left"><b>Cuenta a debitar: </b></div></td>
+					<td class="field">
+						<table align="left" border="0" cellspacing="0" cellpadding="0">
+							<tbody><tr>
+								<td class="mito">
+									<select name="sourceAccount" id="sourceAccount">
+										<option value="" selected="">Seleccione</option>
+										<option value="1">000-112233-44 - Corriente - nombre personalizado</option><option value="2">001-000335-41 - Corriente - Corriente1</option><option value="3">001-000350-14 - Corriente - prueba evolución app</option><option value="4">001-000350-14 - Ahorros - Evolución APP</option><option value="5">001-000554-13 - Corriente - Corriente</option><option value="6">001-000554-21 - Corriente - Corriente</option><option value="7">001-000575-81 - Corriente - Corriente</option><option value="8">001-000578-66 - Corriente - Corriente</option><option value="9">001-000584-02 - Corriente - Corriente</option><option value="10">001-000584-10 - Corriente - Corriente</option><option value="11">001-000584-27 - Corriente - Corriente</option><option value="12">001-000584-34 - Corriente - Corriente</option><option value="13">001-000584-41 - Corriente - Corriente</option><option value="14">001-000584-59 - Corriente - Corriente</option><option value="15">001-000584-64 - Ahorros - Ahorros</option><option value="16">001-000589-79 - Ahorros - Ahorros</option><option value="17">001-000593-33 - Corriente - Corriente</option><option value="18">001-000593-36 - Corriente - Corriente</option><option value="19">001-000593-58 - Corriente - Corriente</option><option value="20">001-000593-65 - Corriente - Corriente</option><option value="21">001-000593-80 - Corriente - Corriente</option><option value="22">001-000593-97 - Corriente - Corriente</option><option value="23">001-000594-08 - Corriente - Corriente</option><option value="24">001-000607-27 - Corriente - Corriente</option><option value="25">001-000681-92 - Ahorros - Ahorros</option><option value="26">001-000745-83 - Ahorros - Pruebas</option><option value="27">001-000745-91 - Ahorros - Ahorros</option><option value="28">001-000747-70 - Ahorros - Ahorros</option><option value="29">001-000747-88 - Ahorros - Ahorros</option><option value="30">001-000747-96 - Ahorros - Ahorros</option><option value="31">001-000748-00 - Ahorros - Ahorros</option><option value="32">001-000748-18 - Ahorros - Ahorros</option><option value="33">001-000748-26 - Ahorros - Ahorros</option><option value="34">001-000748-34 - Ahorros - Ahorros</option><option value="35">001-000748-42 - Ahorros - Ahorros</option><option value="36">001-000748-51 - Ahorros - Ahorros</option><option value="37">001-000748-69 - Ahorros - Ahorros</option><option value="38">001-000748-77 - Ahorros - Ahorros</option><option value="39">001-000748-85 - Ahorros - Ahorros</option><option value="40">001-000749-74 - Ahorros - Ahorros</option><option value="41">001-000749-82 - Ahorros - Ahorros</option><option value="42">001-000750-24 - Ahorros - Ahorros</option><option value="43">001-000750-32 - Ahorros - Ahorros</option><option value="44">001-000750-41 - Ahorros - Ahorros</option><option value="45">001-000750-67 - Ahorros - Ahorros</option><option value="46">001-000750-75 - Ahorros - Ahorros</option><option value="47">001-000750-83 - Ahorros - Ahorros</option><option value="48">001-000750-91 - Ahorros - Ahorros</option><option value="49">001-000751-05 - Ahorros - Ahorros</option><option value="50">001-000751-13 - Ahorros - Ahorros</option><option value="51">001-000751-30 - Ahorros - Ahorros</option><option value="52">001-000751-48 - Ahorros - Ahorros</option><option value="53">001-000751-56 - Ahorros - Ahorros</option><option value="54">001-000751-64 - Ahorros - Ahorros</option><option value="55">001-000751-72 - Ahorros - Ahorros</option><option value="56">001-000751-81 - Ahorros - arley</option><option value="57">001-000752-02 - Ahorros - Ahorros</option><option value="58">001-000752-11 - Ahorros - Ahorros</option><option value="59">001-000752-29 - Ahorros - Ahorros</option><option value="60">001-000757-50 - Ahorros - Ahorros</option><option value="61">001-000765-78 - Corriente - Corriente</option><option value="62">001-000765-85 - Corriente - Corriente</option><option value="63">001-000765-92 - Corriente - arley</option><option value="64">001-000766-03 - Corriente - Corriente</option><option value="65">001-000766-11 - Corriente - Corriente</option><option value="66">001-000766-28 - Corriente - Corriente</option><option value="67">001-000766-35 - Corriente - Corriente</option><option value="68">001-000766-42 - Corriente - Corriente</option><option value="69">001-000766-50 - Corriente - Corriente</option><option value="70">001-000766-67 - Corriente - Corriente</option><option value="71">001-000766-74 - Corriente - Corriente</option><option value="72">001-000766-81 - Corriente - Corriente</option><option value="73">001-000766-99 - Corriente - Corriente</option><option value="74">001-000767-00 - Corriente - Corriente</option><option value="75">001-000767-17 - Corriente - Corriente</option><option value="76">001-000767-24 - Corriente - Corriente</option><option value="77">001-000767-31 - Corriente - Corriente</option><option value="78">001-000767-49 - Corriente - Corriente</option><option value="79">001-000767-56 - Corriente - Corriente</option><option value="80">001-000767-63 - Corriente - Corriente</option><option value="81">001-000767-71 - Corriente - Corriente</option><option value="82">001-000767-88 - Corriente - Corriente</option><option value="83">001-000767-95 - Corriente - Corriente</option><option value="84">001-000768-06 - Corriente - Corriente</option><option value="85">001-000768-13 - Corriente - Corriente</option><option value="86">001-000768-60 - Corriente - Corriente</option><option value="87">001-000768-91 - Corriente - Corriente</option><option value="88">001-000769-02 - Corriente - Corriente</option><option value="89">001-000769-10 - Corriente - Corriente</option><option value="90">001-000769-27 - Corriente - Corriente</option><option value="91">001-000769-41 - Corriente - Corriente</option><option value="92">001-000769-59 - Corriente - Corriente</option><option value="93">001-000769-73 - Corriente - Corriente</option><option value="94">001-000769-98 - Corriente - Corriente</option><option value="95">001-000770-18 - Corriente - Corriente</option><option value="96">001-000770-25 - Corriente - Corriente</option><option value="97">001-000770-32 - Corriente - Corriente</option><option value="98">001-000770-40 - Corriente - EvolucionAPP1</option><option value="99">001-000770-57 - Corriente - Corriente</option><option value="100">001-000770-64 - Corriente - Corriente</option><option value="101">001-000770-71 - Corriente - Corriente</option><option value="102">001-000770-89 - Corriente - Corriente</option><option value="103">001-000770-96 - Corriente - Corriente</option><option value="104">001-000771-07 - Corriente - Corriente</option><option value="105">001-000771-14 - Corriente - Corriente</option><option value="106">001-000771-21 - Corriente - Corriente</option><option value="107">001-000771-61 - Corriente - Corriente</option><option value="108">001-000771-78 - Corriente - Corriente</option><option value="109">001-000771-85 - Corriente - Corriente</option><option value="110">001-000771-92 - Corriente - Corriente</option><option value="111">001-000775-31 - Ahorros - Ahorros</option><option value="112">001-000775-40 - Ahorros - Ahorros</option><option value="113">001-000775-58 - Ahorros - Ahorros</option><option value="114">001-000775-66 - Ahorros - Ahorros</option><option value="115">001-000775-74 - Ahorros - Ahorros</option><option value="116">001-000775-82 - Ahorros - Ahorros</option><option value="117">001-000775-91 - Ahorros - Ahorros</option><option value="118">001-000776-04 - Ahorros - Ahorros</option><option value="119">001-000776-12 - Ahorros - Ahorros</option><option value="120">001-000776-21 - Ahorros - Ahorros</option><option value="121">001-000776-39 - Ahorros - Ahorros</option><option value="122">001-000776-47 - Ahorros - Ahorros</option><option value="123">001-000776-55 - Ahorros - Ahorros</option><option value="124">001-000776-63 - Ahorros - Ahorros</option><option value="125">001-000776-71 - Ahorros - Ahorros</option><option value="126">001-000776-80 - Ahorros - Ahorros</option><option value="127">001-000776-98 - Ahorros - Ahorros</option><option value="128">001-000777-01 - Ahorros - Ahorros</option><option value="129">001-000777-10 - Ahorros - Ahorros</option><option value="130">001-000777-28 - Ahorros - Ahorros</option><option value="131">001-000777-36 - Ahorros - Ahorros</option><option value="132">001-000777-44 - Ahorros - Ahorros</option><option value="133">001-000777-52 - Ahorros - Ahorros</option><option value="134">001-000777-61 - Ahorros - Ahorros</option><option value="135">001-000777-79 - Ahorros - Ahorros</option><option value="136">001-000777-87 - Ahorros - Ahorros</option><option value="137">001-000777-95 - Ahorros - Ahorros</option><option value="138">001-000778-09 - Ahorros - Ahorros</option><option value="139">001-000778-17 - Ahorros - Ahorros</option><option value="140">001-000778-25 - Ahorros - Ahorros</option><option value="141">001-000778-33 - Ahorros - Ahorros</option><option value="142">001-000778-41 - Ahorros - Ahorros</option><option value="143">001-000778-50 - Ahorros - Ahorros</option><option value="144">001-000778-68 - Ahorros - Ahorros</option><option value="145">001-000778-76 - Ahorros - Ahorros</option><option value="146">001-000778-80 - Corriente - Corriente</option><option value="147">001-000778-97 - Corriente - Corriente</option><option value="148">001-000779-08 - Corriente - Corriente</option><option value="149">001-000779-15 - Corriente - Corriente</option><option value="150">001-000779-22 - Corriente - Corriente</option><option value="151">001-000779-30 - Corriente - Corriente</option><option value="152">001-000779-47 - Corriente - Corriente</option><option value="153">001-000779-54 - Corriente - Corriente</option><option value="154">001-000779-61 - Corriente - Corriente</option><option value="155">001-000779-79 - Corriente - Corriente</option><option value="156">001-000779-86 - Corriente - Corriente</option><option value="157">001-000779-93 - Corriente - Corriente</option><option value="158">001-000780-06 - Corriente - Corriente</option><option value="159">001-000780-13 - Corriente - Corriente</option><option value="160">001-000780-21 - Corriente - Corriente</option><option value="161">001-000780-38 - Corriente - Corriente</option><option value="162">001-000780-45 - Corriente - Corriente</option><option value="163">001-000780-60 - Corriente - Corriente</option><option value="164">001-000780-77 - Corriente - Corriente</option><option value="165">001-000780-84 - Corriente - Corriente</option><option value="166">001-000785-93 - Corriente - Corriente</option><option value="167">001-000786-04 - Corriente - Corriente</option><option value="168">001-000786-11 - Corriente - Corriente</option><option value="169">001-000786-29 - Corriente - Corriente</option><option value="170">001-000786-36 - Corriente - Corriente</option><option value="171">001-000786-43 - Corriente - Corriente</option><option value="172">001-000786-51 - Corriente - Corriente</option><option value="173">001-000786-68 - Corriente - Corriente</option><option value="174">001-000786-75 - Corriente - Corriente</option><option value="175">001-000786-82 - Corriente - Corriente</option><option value="176">001-000786-90 - Corriente - Corriente</option><option value="177">001-000787-01 - Corriente - Corriente</option><option value="178">001-000787-71 - Corriente - Corriente</option><option value="179">001-000946-01 - Corriente - Corriente</option><option value="180">001-234567-89 - Ahorros - Ahorros</option><option value="181">009-030822-09 - Ahorros - Ahorros</option><option value="182">027-600000-10 - Ahorros - Ahorros</option><option value="183">030-000572-82 - Corriente - evolución app empresas</option><option value="184">030-154697-05 - Corriente - Corriente</option><option value="185">030-154697-05 - Ahorros - Ahorros</option><option value="186">031-588197-87 - Corriente - Corriente</option><option value="187">060-000548-45 - Corriente - Corriente</option><option value="188">073-000640-95 - Corriente - Corriente</option><option value="189">073-401042-04 - Ahorros - Ahorros</option><option value="190">073-401042-21 - Corriente - Corriente</option><option value="191">073-401042-38 - Corriente - Corriente</option><option value="192">073-401042-52 - Corriente - Corriente</option><option value="193">073-412883-07 - Corriente - Corriente</option><option value="194">102-411150-56 - Corriente - Corriente</option><option value="195">102-822345-86 - Ahorros - Ahorros</option><option value="196">103-822341-87 - Corriente - Corriente</option><option value="197">105-708366-16 - Ahorros - Ahorros</option><option value="198">406-100030-09 - Ahorros - Ahorros</option><option value="199">406-124000-02 - Corriente - Corriente</option><option value="200">406-124000-08 - Corriente - Corriente</option><option value="201">406-124000-09 - Corriente - Corriente</option><option value="202">406-124000-10 - Corriente - Corriente</option><option value="203">406-124000-13 - Corriente - Corriente</option><option value="204">406-124000-14 - Corriente - Corriente</option><option value="205">406-124000-15 - Corriente - Corriente</option><option value="206">406-124000-16 - Corriente - Corriente</option><option value="207">406-124000-17 - Corriente - Corriente</option><option value="208">406-124000-25 - Corriente - prueba1</option><option value="209">406-124000-26 - Corriente - prueba2</option><option value="210">406-125890-01 - Corriente - Corriente</option><option value="211">406-720000-10 - Ahorros - PRUEBA BANCO</option><option value="212">406-724000-09 - Ahorros - Ahorros</option><option value="213">406-724000-10 - Ahorros - Ahorros</option><option value="214">406-724000-11 - Ahorros - Ahorros</option><option value="215">406-724000-12 - Ahorros - Ahorros</option><option value="216">406-724000-13 - Ahorros - Ahorros</option><option value="217">406-724000-34 - Ahorros - Ahorros</option><option value="218">406-724000-40 - Ahorros - Ahorros</option><option value="219">406-724000-41 - Ahorros - Ahorros</option><option value="220">406-724000-42 - Ahorros - Ahorros</option><option value="221">406-724000-43 - Ahorros - Ahorros</option><option value="222">406-724000-45 - Ahorros - Ahorros</option><option value="223">406-724000-46 - Ahorros - Ahorros</option><option value="224">406-724000-47 - Ahorros - Ahorros</option><option value="225">406-724000-48 - Ahorros - Ahorros</option><option value="226">406-724000-49 - Ahorros - Ahorros</option><option value="227">406-724000-50 - Ahorros - Ahorros</option><option value="228">406-724000-51 - Ahorros - Ahorros</option><option value="229">406-724000-52 - Ahorros - Ahorros</option><option value="230">406-724000-53 - Ahorros - Ahorros</option><option value="231">406-724000-54 - Ahorros - Ahorros</option><option value="232">406-724000-55 - Ahorros - Ahorros</option><option value="233">406-724000-56 - Ahorros - Ahorros</option><option value="234">406-724000-57 - Ahorros - Ahorros</option><option value="235">406-724000-58 - Ahorros - Ahorros</option><option value="236">406-724000-59 - Ahorros - Ahorros</option><option value="237">406-724000-60 - Ahorros - Ahorros</option><option value="238">406-724000-61 - Ahorros - Ahorros</option><option value="239">406-724000-62 - Ahorros - Ahorros</option><option value="240">406-724000-63 - Ahorros - Ahorros</option><option value="241">406-724000-64 - Ahorros - Ahorros</option><option value="242">406-724000-65 - Ahorros - Ahorros</option><option value="243">406-724000-66 - Ahorros - Ahorros</option><option value="244">406-724000-67 - Ahorros - Ahorros</option><option value="245">406-724000-68 - Ahorros - Ahorros</option><option value="246">406-724000-69 - Ahorros - Ahorros</option><option value="247">406-724000-70 - Ahorros - Ahorros</option><option value="248">406-724000-71 - Ahorros - Ahorros</option><option value="249">406-724000-72 - Ahorros - Ahorros</option><option value="250">406-724000-74 - Ahorros - Ahorros</option><option value="251">406-724000-75 - Ahorros - Ahorros</option><option value="252">406-724000-76 - Ahorros - Ahorros</option><option value="253">406-724000-77 - Ahorros - Ahorros CAMILO</option><option value="254">406-724000-79 - Ahorros - Ahorros</option><option value="255">406-724000-80 - Ahorros - Ahorros1</option><option value="256">406-724000-81 - Ahorros - Ahorros</option><option value="257">406-724000-82 - Ahorros - Ahorros</option><option value="258">406-724000-83 - Ahorros - Ahorros</option><option value="259">406-724000-84 - Ahorros - Ahorros</option><option value="260">406-724000-85 - Ahorros - Ahorros</option><option value="261">406-724000-90 - Ahorros - Ahorros2</option><option value="262">408-149676-05 - Ahorros - Ahorros</option><option value="263">436-304430-76 - Ahorros - Ahorros</option><option value="264">454-011100-01 - Ahorros - Ahorros</option><option value="265">454-011100-02 - Ahorros - Ahorros</option><option value="266">454-011100-03 - Ahorros - Ahorros</option><option value="267">454-011100-04 - Ahorros - Ahorros</option><option value="268">454-011100-05 - Ahorros - Ahorros</option><option value="269">454-011100-11 - Ahorros - Ahorros</option><option value="270">454-511100-01 - Corriente - Corriente</option><option value="271">454-611100-02 - Corriente - Corriente</option><option value="272">454-711100-03 - Corriente - Corriente</option><option value="273">454-811100-04 - Corriente - Corriente</option><option value="274">454-911100-05 - Corriente - Corriente</option><option value="275">494-701465-66 - Corriente - arley APP Empresas</option><option value="276">506-000581-50 - Corriente - Corriente</option><option value="277">506-000582-17 - Corriente - pruebas app empresas</option><option value="278">001-000000-18 - Ahorros - Ahorros</option><option value="279">001-000589-79 - Ahorros - Ahorros</option><option value="280">406-111000-00 - Corriente - Mejora de pagos</option><option value="281">406-724000-11 - Ahorros - Ahorros</option><option value="282">40619546000 - Corriente - user9545</option><option value="283">40619546001 - Corriente - user9546</option><option value="284">40679546005 - Ahorros - user9546</option><option value="285">40679546006 - Ahorros - user9546</option>
+									</select>
+								</td>
+							</tr>
+						</tbody></table>
+					</td>
+					<td class="field">
+						<input type="button" value="Consultar Saldos" class="botones" onclick="w=openWindow();if (w != null) {deshabilitarBotones('forma');w.focus();  w.onload = function() { w.onbeforeunload = function(){habilitarBotones('forma');};}}; return false;" name="button" />
+					</td>
+				</tr>
+				<!-- Tipo de aplicacion -->
+				
+				
+				<!-- Dejo el campo escondido para que no falle js -->
+				<input type="hidden" name="tipoaplicacion" value="0" />
+				
+				<!-- fecha efectiva -->
+				<tr valign="middle">
+					<!-- DEVBOLEBC-973 - V5.12.7 PRJ-001961 -Look & Feel de la aplicación -->
+					<td class="label" id="ldate" style="FONT-SIZE: 7pt; BACKGROUND-COLOR: #eeeeee; BORDER-RIGHT: black 1px solid;"><div align="left"><b>Fecha de aplicación:</b></div></td>
+					<td class="field">
+						<span class="datepicker_wrap"><input type="text" id="date" name="date" maxlength="10" size="10" class="hasDatepicker" /><img class="datepicker_trigger" src="/bancolombia/images/calendar.gif" alt="" title="" /></span>(dd/mm/aaaa)
+					</td>
+
+				</tr>
+			</tbody></table>
+		  
+			<div align="center">
+				<p><br />
+					<input type="button" value="Continuar" name="Continuar" class="botones" onclick="clickContinuar();" />
+					<input type="button" value="Regresar" name="Regresar" id="Regresar" class="botones" onclick="deshabilitarBotones('forma');document.formaRegresar.submit();" />
+				</p>
+			</div>
+
+		</form>
+    
+		<!-- Formas para manejo de eventos en el misformulario -->
+		
+		<form autocomplete="off" name="fileTypeForm" method="POST" action="BatchPaymentsCreate.loteType">
+			<!-- Datos para workflow -->
+			<input type="hidden" name="processInstanceId" value="631834469B3708EB46C0A8A8E250494E" />
+<input type="hidden" name="activityInstanceId" value="6318346F71574D95F1C0A8A8E241494E" />
+
+			<input type="hidden" name="fileType" />
+			<input type="hidden" name="loteId" />
+			<input type="hidden" name="sourceAccount" />
+			<input type="hidden" name="date" id="date" />
+			<input type="hidden" name="tipoaplicacion" />
+		</form>
+
+		<form name="formaRegresar" method="POST" action="BatchPaymentsCreate.regresar">
+			<input type="hidden" name="processInstanceId" value="631834469B3708EB46C0A8A8E250494E" />
+<input type="hidden" name="activityInstanceId" value="6318346F71574D95F1C0A8A8E241494E" />
+
+		</form>
+
+		</td>
+	</tr>
+	<tr>
+		<td width="1%"> </td>
+		<td width="99%">
+			
+			<table width="100%" border="0" cellspacing="3" cellpadding="0">
+	<tbody><tr>
+		<td height="20" align="center">
+			<script>
+				var today = new Date();
+				document.write("&lt;font size='1'&gt;COPYRIGHTS &amp;copy; 2000 - "+ today.getFullYear()+" TODO1 SERVICES, INC. Todos los derechos reservados.&lt;/font&gt;");
+			</script><font size="1">COPYRIGHTS © 2000 - 2018 TODO1 SERVICES, INC. Todos los derechos reservados.</font>
+		</td>
+	</tr>
+</tbody></table>
+
+		</td>
+	</tr>
+</tbody></table>
+
+
+
+<div id="datepicker_div"></div></body></html>
